@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/macbookair/WebstormProjects/Pokemons/ios/PokemonsApp.xcodeproj">
+      location = "group:/Users/macbookair/WebstormProjects/Pokemons/ios/MusicApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MusicApp.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,3 +1,5 @@
 export * from './Body'
+export * from './Icon'
 export * from './Screen'
+export * from './TextInput'
 export * from './Title'
