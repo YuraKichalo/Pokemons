@@ -7,10 +7,10 @@ export const styles = StyleSheet.create({
   },
   topContentContainer: {
     paddingHorizontal: 25,
-    flex: 2,
     backgroundColor: COLORS.primary,
     borderBottomRightRadius: 50,
-    borderBottomLeftRadius: 50
+    borderBottomLeftRadius: 50,
+    paddingBottom: 45
   },
   bottomContentContainer: {
     paddingHorizontal: 25,
@@ -20,5 +20,14 @@ export const styles = StyleSheet.create({
   title: {
     lineHeight: 40,
     marginTop: 100
+  },
+  categoriesContainer: {
+    marginTop: 50
+  },
+  inputContainer: {
+    marginTop: 35
+  },
+  flatList: {
+    paddingBottom: 15
   }
 })
