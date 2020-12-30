@@ -1,20 +1,6 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import { Title } from 'presentation/components'
-import { Strings } from 'presentation/assets'
+import { Home } from 'presentation/screens'
 
 export const App = () => (
-  <View style={styles.container}>
-    <Title>
-      {Strings.welcome}
-    </Title>
-  </View>
+  <Home />
 )
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})

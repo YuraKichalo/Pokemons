@@ -1,3 +1,5 @@
 export const english = {
-  welcome: 'welcome'.toUpperCase()
+  home: {
+    title: 'What Pokemon\nare you looking for?'
+  }
 }
