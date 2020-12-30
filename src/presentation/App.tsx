@@ -1,9 +1,13 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
+import { Title } from 'presentation/components'
+import { Strings } from 'presentation/assets'
 
 export const App = () => (
   <View style={styles.container}>
-    <Text>WELCOME</Text>
+    <Title>
+      {Strings.welcome}
+    </Title>
   </View>
 )
 
