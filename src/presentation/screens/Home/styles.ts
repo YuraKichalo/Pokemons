@@ -5,6 +5,9 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.secondary
   },
+  scrollContainer: {
+    flexGrow: 1
+  },
   topContentContainer: {
     paddingHorizontal: 25,
     backgroundColor: COLORS.primary,
@@ -22,12 +25,20 @@ export const styles = StyleSheet.create({
     marginTop: 100
   },
   categoriesContainer: {
-    marginTop: 50
+    marginTop: 50,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between'
   },
   inputContainer: {
     marginTop: 35
   },
   flatList: {
     paddingBottom: 15
+  },
+  categoryButton: {
+    width: '48%',
+    height: 70,
+    marginBottom: 20
   }
 })

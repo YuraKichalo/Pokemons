@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, ScrollView, FlatList } from 'react-native'
+import { View, ScrollView } from 'react-native'
 import { COLORS, Strings } from 'presentation/assets'
 import { Body, Screen, TextInput, Title } from 'presentation/components'
 import { styles } from './styles'
@@ -15,10 +15,10 @@ const CATEGORIES = [
 ]
 
 export const Home = () => (
-  <Screen style={styles.container}>
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-    >
+  <ScrollView
+    contentContainerStyle={[styles.scrollContainer, { backgroundColor: 'red' }]}
+  >
+    <Screen style={styles.container}>
       <View style={styles.topContentContainer}>
         <Title
           style={styles.title}
@@ -30,21 +30,14 @@ export const Home = () => (
           containerStyles={styles.inputContainer}
         />
         <View style={styles.categoriesContainer}>
-          <FlatList
-            data={CATEGORIES}
-            keyExtractor={(item => `${item.title}`)}
-            numColumns={2}
-            contentContainerStyle={styles.flatList}
-            ItemSeparatorComponent={() => (
-              <View style={{ height: 20 }} />
-            )}
-            renderItem={({ item }) => (
-              <CategoryButton
-                title={item.title}
-                color={item.color}
-              />
-            )}
-          />
+          {CATEGORIES.map((category) => (
+            <CategoryButton
+              key={category.title}
+              title={category.title}
+              color={category.color}
+              style={styles.categoryButton}
+            />
+          ))}
         </View>
       </View>
       <View style={styles.bottomContentContainer}>
@@ -52,6 +45,7 @@ export const Home = () => (
           Placeholder
         </Body>
       </View>
-    </ScrollView>
-  </Screen>
+    </Screen>
+  </ScrollView>
+
 )

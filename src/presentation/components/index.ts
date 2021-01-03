@@ -1,4 +1,5 @@
 export * from './Body'
+export * from './ChildrenSpacing'
 export * from './Icon'
 export * from './Screen'
 export * from './TextInput'
