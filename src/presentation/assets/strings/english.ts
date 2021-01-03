@@ -9,6 +9,8 @@ export const english = {
       items: 'Items',
       locations: 'Locations',
       typeCharts: 'Type Charts'
-    }
+    },
+    pokemonNews: 'Pokemon News',
+    viewAll: 'View All'
   }
 }

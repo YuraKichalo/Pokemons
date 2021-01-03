@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/components/Row/Row.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/components/Row/RowProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/components/Row/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/components/Row/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/components/ChildrenSpacing/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/ChildrenSpacing/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/theme/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/theme/theme.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/components/CategoryButton/CategoryButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/CategoryButton/CategoryButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
       <updated>1609245755398</updated>
       <workItem from="1609245758246" duration="14380000" />
       <workItem from="1609671797032" duration="179000" />
-      <workItem from="1609686178944" duration="4851000" />
+      <workItem from="1609686178944" duration="5618000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609690886392</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added Row component &amp; code improvements">
+      <created>1609691635217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609691635217</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +161,7 @@
     <MESSAGE value="added TextInput &amp; Icon components" />
     <MESSAGE value="added categories" />
     <MESSAGE value="added ChildrenSpacing component &amp; make Home screen scrollable" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ChildrenSpacing component &amp; make Home screen scrollable" />
+    <MESSAGE value="added Row component &amp; code improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Row component &amp; code improvements" />
   </component>
 </project>

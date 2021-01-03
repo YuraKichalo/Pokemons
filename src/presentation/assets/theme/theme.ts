@@ -9,5 +9,6 @@ export const COLORS = {
   blue: '#73b7f3',
   yellow: '#f8cb4a',
   purple: '#7b538b',
-  brown: '#b77b74'
+  brown: '#b77b74',
+  darkGray: '#7b7e82'
 }

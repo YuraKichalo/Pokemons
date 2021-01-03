@@ -45,11 +45,14 @@ export const Home = () => (
           centered
           style={styles.bottomContentHeaderContainer}
         >
-          <Body>
-            Placeholder
+          <Body style={styles.bottomContentTitle}>
+            {Strings.home.pokemonNews}
           </Body>
-          <Body>
-            Placeholder
+          <Body
+            style={styles.viewAll}
+            onPress={() => true}
+          >
+            {Strings.home.viewAll}
           </Body>
         </Row>
       </View>

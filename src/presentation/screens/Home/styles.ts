@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { Platform, StyleSheet } from 'react-native'
 import { COLORS } from 'presentation/assets'
 
 export const styles = StyleSheet.create({
@@ -42,6 +42,23 @@ export const styles = StyleSheet.create({
     marginBottom: 20
   },
   bottomContentHeaderContainer: {
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginTop: 45
+
+  },
+  bottomContentTitle: {
+    fontWeight: 'bold',
+    fontSize: 22
+  },
+  viewAll: {
+    ...Platform.select({
+      ios: {
+        fontWeight: '500'
+      },
+      android: {
+        fontFamily: 'sans-serif-medium'
+      }
+    }),
+    color: COLORS.darkGray
   }
 })
