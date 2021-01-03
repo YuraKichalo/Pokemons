@@ -1,6 +1,7 @@
 export * from './Body'
 export * from './ChildrenSpacing'
 export * from './Icon'
+export * from './Row'
 export * from './Screen'
 export * from './TextInput'
 export * from './Title'

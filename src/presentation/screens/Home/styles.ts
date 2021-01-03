@@ -40,5 +40,8 @@ export const styles = StyleSheet.create({
     width: '48%',
     height: 70,
     marginBottom: 20
+  },
+  bottomContentHeaderContainer: {
+    justifyContent: 'space-between'
   }
 })

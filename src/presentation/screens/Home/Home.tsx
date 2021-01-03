@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, ScrollView } from 'react-native'
 import { COLORS, Strings } from 'presentation/assets'
-import { Body, Screen, TextInput, Title } from 'presentation/components'
+import { Body, Screen, TextInput, Title, Row } from 'presentation/components'
 import { styles } from './styles'
 import { CategoryButton } from './components'
 
@@ -16,7 +16,7 @@ const CATEGORIES = [
 
 export const Home = () => (
   <ScrollView
-    contentContainerStyle={[styles.scrollContainer, { backgroundColor: 'red' }]}
+    contentContainerStyle={styles.scrollContainer}
   >
     <Screen style={styles.container}>
       <View style={styles.topContentContainer}>
@@ -41,9 +41,17 @@ export const Home = () => (
         </View>
       </View>
       <View style={styles.bottomContentContainer}>
-        <Body>
-          Placeholder
-        </Body>
+        <Row
+          centered
+          style={styles.bottomContentHeaderContainer}
+        >
+          <Body>
+            Placeholder
+          </Body>
+          <Body>
+            Placeholder
+          </Body>
+        </Row>
       </View>
     </Screen>
   </ScrollView>

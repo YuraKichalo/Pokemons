@@ -1,1 +1,1 @@
-export { ChildrenSpacing } from './ChildrenSpacing'
+export * from './ChildrenSpacing'

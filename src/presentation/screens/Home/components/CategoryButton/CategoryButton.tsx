@@ -9,8 +9,8 @@ export const CategoryButton = (props: CategoryButtonProps) => (
     {...props}
     style={[
       styles.container,
-      props.style,
-      { backgroundColor: props.color, shadowColor: props.color }
+      { backgroundColor: props.color, shadowColor: props.color },
+      props.style
     ]}
   >
     <Body style={styles.title}>
