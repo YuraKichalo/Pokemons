@@ -1,5 +1,6 @@
 export * from './Body'
 export * from './ChildrenSpacing'
+export * from './Divider'
 export * from './Icon'
 export * from './Row'
 export * from './Screen'

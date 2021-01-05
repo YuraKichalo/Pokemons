@@ -12,6 +12,8 @@
   "dependencies": {
     "@types/react-native-vector-icons": "^6.4.6",
     "babel-eslint": "^10.1.0",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
     "react": "16.13.1",
     "react-native": "0.63.3",
     "react-native-vector-icons": "^7.1.0",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-decorators": "^7.12.12",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",

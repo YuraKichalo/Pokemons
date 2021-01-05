@@ -17,8 +17,7 @@ export const styles = StyleSheet.create({
   },
   bottomContentContainer: {
     paddingHorizontal: 25,
-    flex: 1,
-    backgroundColor: COLORS.secondary
+    paddingVertical: 45
   },
   title: {
     lineHeight: 40,
@@ -42,8 +41,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20
   },
   bottomContentHeaderContainer: {
-    justifyContent: 'space-between',
-    marginTop: 45
+    justifyContent: 'space-between'
 
   },
   bottomContentTitle: {
@@ -60,5 +58,11 @@ export const styles = StyleSheet.create({
       }
     }),
     color: COLORS.darkGray
+  },
+  newsItemsContainer: {
+    marginTop: 30
+  },
+  divider: {
+    marginVertical: 20
   }
 })

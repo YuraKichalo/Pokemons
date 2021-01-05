@@ -4,12 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
+    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="added Pokemon news &amp; mobx &amp; ChildrenSpacing, Divider components">
+      <change afterPath="$PROJECT_DIR$/src/pokemonNews/PokemonNews.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemonNews/PokemonNewsDataSource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemonNews/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/assets/images/detectivePikachu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/assets/images/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/assets/images/pokemonRumbleRush.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Divider/Divider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Divider/DividerProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Divider/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeViewModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItemProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/assets/theme/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/theme/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/Icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/Icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/Icon/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/Icon/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -77,7 +99,7 @@
       <updated>1609245755398</updated>
       <workItem from="1609245758246" duration="14380000" />
       <workItem from="1609671797032" duration="179000" />
-      <workItem from="1609686178944" duration="5618000" />
+      <workItem from="1609686178944" duration="13658000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -135,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609691635217</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Pokemon news section title">
+      <created>1609692481774</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609692481775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +191,8 @@
     <MESSAGE value="added categories" />
     <MESSAGE value="added ChildrenSpacing component &amp; make Home screen scrollable" />
     <MESSAGE value="added Row component &amp; code improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Row component &amp; code improvements" />
+    <MESSAGE value="added Pokemon news section title" />
+    <MESSAGE value="added Pokemon news &amp; mobx &amp; ChildrenSpacing, Divider components" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Pokemon news &amp; mobx &amp; ChildrenSpacing, Divider components" />
   </component>
 </project>

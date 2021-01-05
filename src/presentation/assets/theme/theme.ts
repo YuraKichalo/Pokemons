@@ -10,5 +10,6 @@ export const COLORS = {
   yellow: '#f8cb4a',
   purple: '#7b538b',
   brown: '#b77b74',
-  darkGray: '#7b7e82'
+  darkGray: '#7b7e82',
+  gray: '#c9c9c9'
 }
