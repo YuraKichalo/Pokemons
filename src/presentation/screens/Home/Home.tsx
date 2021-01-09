@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { View, ScrollView } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import { observer } from 'mobx-react'
 import { COLORS, Strings } from 'presentation/assets'
 import { Body, Screen, TextInput, Title, Row, Divider } from 'presentation/components'
 import { styles } from './styles'
 import { CategoryButton, NewsItem } from './components'
 import { HomeViewModel } from './HomeViewModel'
+import { HomeRouter } from './HomeRouter'
+import { HomeNavigationProp } from './HomeNavigationProp'
 
 const CATEGORIES = [
   { title: Strings.home.categories.pokedex, color: COLORS.green },
@@ -18,6 +21,8 @@ const CATEGORIES = [
 
 export const Home = observer(() => {
   const [viewModel] = useState(() => new HomeViewModel())
+  const navigation = useNavigation<HomeNavigationProp>()
+  const [router] = useState(() => new HomeRouter(navigation))
 
   return (
     <ScrollView
@@ -35,14 +40,24 @@ export const Home = observer(() => {
             containerStyles={styles.inputContainer}
           />
           <View style={styles.categoriesContainer}>
-            {CATEGORIES.map((category) => (
-              <CategoryButton
-                key={category.title}
-                title={category.title}
-                color={category.color}
-                style={styles.categoryButton}
-              />
-            ))}
+            {CATEGORIES.map((category) => {
+              const onCategoryPress = () => {
+                switch (category.title) {
+                  case Strings.home.categories.pokedex:
+                    router.navigateToPokedex()
+                }
+              }
+
+              return (
+                <CategoryButton
+                  key={category.title}
+                  title={category.title}
+                  color={category.color}
+                  style={styles.categoryButton}
+                  onPress={onCategoryPress}
+                />
+              )
+            })}
           </View>
         </View>
         <View style={styles.bottomContentContainer}>
