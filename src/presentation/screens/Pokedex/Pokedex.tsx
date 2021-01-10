@@ -1,9 +1,16 @@
 import React from 'react'
 import { styles } from './styles'
-import { Body, Screen } from 'presentation/components'
+import { Header, Screen, Title } from 'presentation/components'
+import { Strings } from '../../assets'
 
 export const Pokedex = () => (
   <Screen style={styles.container}>
-    <Body>Hello</Body>
+    <Header
+      rightIconTitle='menu'
+      style={styles.header}
+    />
+    <Title>
+      {Strings.pokedex.title}
+    </Title>
   </Screen>
 )

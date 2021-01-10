@@ -12,5 +12,8 @@ export const english = {
     },
     pokemonNews: 'Pokemon News',
     viewAll: 'View All'
+  },
+  pokedex: {
+    title: 'Pokedex'
   }
 }

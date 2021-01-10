@@ -3,8 +3,12 @@ import { COLORS } from '../../assets'
 
 export const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: COLORS.primary
+    backgroundColor: COLORS.primary,
+    paddingHorizontal: 25
+  },
+  header: {
+    justifyContent: 'space-between',
+    marginTop: 70,
+    marginBottom: 20
   }
 })

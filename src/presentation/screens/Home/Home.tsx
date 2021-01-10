@@ -20,9 +20,9 @@ const CATEGORIES = [
 ]
 
 export const Home = observer(() => {
-  const [viewModel] = useState(() => new HomeViewModel())
   const navigation = useNavigation<HomeNavigationProp>()
   const [router] = useState(() => new HomeRouter(navigation))
+  const [viewModel] = useState(() => new HomeViewModel(router))
 
   return (
     <ScrollView
@@ -40,24 +40,15 @@ export const Home = observer(() => {
             containerStyles={styles.inputContainer}
           />
           <View style={styles.categoriesContainer}>
-            {CATEGORIES.map((category) => {
-              const onCategoryPress = () => {
-                switch (category.title) {
-                  case Strings.home.categories.pokedex:
-                    router.navigateToPokedex()
-                }
-              }
-
-              return (
-                <CategoryButton
-                  key={category.title}
-                  title={category.title}
-                  color={category.color}
-                  style={styles.categoryButton}
-                  onPress={onCategoryPress}
-                />
-              )
-            })}
+            {CATEGORIES.map((category) => (
+              <CategoryButton
+                key={category.title}
+                title={category.title}
+                color={category.color}
+                style={styles.categoryButton}
+                onPress={() => viewModel.onCategoryPress(category.title)}
+              />
+            ))}
           </View>
         </View>
         <View style={styles.bottomContentContainer}>

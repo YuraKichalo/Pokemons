@@ -5,24 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeNavigationProp.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Header/HeaderProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Header/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/Header/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/IconGoBack/IconGoBack.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/components/IconGoBack/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/MusicApp.xcworkspace/xcuserdata/macbookair.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/MusicApp.xcworkspace/xcuserdata/macbookair.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/macbookair.xcuserdatad/xcschemes/React-Core-AccessibilityResources.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/macbookair.xcuserdatad/xcschemes/React-Core-AccessibilityResources.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/HomeProps.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/HomeViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeViewModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,8 @@
       <workItem from="1609245758246" duration="14380000" />
       <workItem from="1609671797032" duration="179000" />
       <workItem from="1609686178944" duration="15098000" />
-      <workItem from="1610191701937" duration="5654000" />
+      <workItem from="1610191701937" duration="5953000" />
+      <workItem from="1610281481734" duration="3970000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -171,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610192322909</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added base Pokedex screen &amp; fixed issue with React navigation">
+      <created>1610201166316</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610201166316</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +204,7 @@
     <MESSAGE value="added Pokemon news section title" />
     <MESSAGE value="added Pokemon news &amp; mobx &amp; ChildrenSpacing, Divider components" />
     <MESSAGE value="added base navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added base navigation" />
+    <MESSAGE value="added base Pokedex screen &amp; fixed issue with React navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added base Pokedex screen &amp; fixed issue with React navigation" />
   </component>
 </project>
