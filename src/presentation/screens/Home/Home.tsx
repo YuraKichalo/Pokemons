@@ -61,7 +61,7 @@ export const Home = observer(() => {
             </Body>
             <Body
               style={styles.viewAll}
-              onPress={() => true}
+              onPress={() => viewModel.onViewAllPress()}
             >
               {Strings.home.viewAll}
             </Body>

@@ -11,4 +11,8 @@ export class HomeRouter {
   public navigateToPokedex = () => {
     this.navigation.navigate(AppRoutes.Pokedex)
   }
+
+  public navigateToNews = () => {
+    this.navigation.navigate(AppRoutes.News)
+  }
 }

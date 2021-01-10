@@ -1,7 +1,7 @@
-import { PokemonNews } from './PokemonNews'
+import { News } from './News'
 import { Images } from 'presentation/assets'
 
-export const PokemonNewsDataSource: PokemonNews = [
+export const NewsDataSource: News = [
   {
     title: 'Pokemon Rumble Rush Arrive Soon',
     description: 'Lorem ipsum dolor sit amet, mel te ocurreret vituperata, ' +

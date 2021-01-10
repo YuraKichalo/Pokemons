@@ -18,6 +18,10 @@ export const App = () => (
         name={AppRoutes.Pokedex}
         component={Screens.Pokedex}
       />
+      <Stack.Screen
+        name={AppRoutes.News}
+        component={Screens.News}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 )

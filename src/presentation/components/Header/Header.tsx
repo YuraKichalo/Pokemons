@@ -8,15 +8,18 @@ export const Header = (props: HeaderProps) => (
   <Row
     {...props}
     centered
+    style={[styles.container, props.style]}
   >
     <IconGoBack style={styles.iconGoBack} />
-    <TouchableOpacity
-      style={styles.iconMenuContainer}
-    >
-      <Icon
-        size={30}
-        name={props.rightIconTitle}
-      />
-    </TouchableOpacity>
+    {props.rightIconTitle && (
+      <TouchableOpacity
+        style={styles.iconMenuContainer}
+      >
+        <Icon
+          size={30}
+          name={props.rightIconTitle}
+        />
+      </TouchableOpacity>
+    )}
   </Row>
 )

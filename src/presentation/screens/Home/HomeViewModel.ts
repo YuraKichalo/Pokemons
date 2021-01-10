@@ -1,11 +1,11 @@
 import { makeAutoObservable } from 'mobx'
-import { PokemonNewsDataSource } from 'pokemonNews'
+import { NewsDataSource } from 'news'
 import { HomeRouter } from './HomeRouter'
 import { Strings } from 'presentation/assets'
 
 export class HomeViewModel {
   public get pokemonNews() {
-    return PokemonNewsDataSource
+    return NewsDataSource
   }
 
   private router: HomeRouter
@@ -20,5 +20,9 @@ export class HomeViewModel {
       case Strings.home.categories.pokedex:
         this.router.navigateToPokedex()
     }
+  }
+
+  public onViewAllPress = () => {
+    this.router.navigateToNews()
   }
 }
