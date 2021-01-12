@@ -1,5 +1,7 @@
 export type RootStackParamsList = {
   Home: undefined
-  News: undefined
+  News: {
+    selectedItemIndex?: number
+  }
   Pokedex: undefined
 }

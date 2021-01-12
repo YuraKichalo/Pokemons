@@ -1,11 +1,11 @@
 import React from 'react'
-import { Image, View } from 'react-native'
+import { Image, TouchableOpacity, View } from 'react-native'
 import { NewsItemProps } from './NewsItemProps'
 import { Body } from 'presentation/components'
 import { styles } from './styles'
 
 export const NewsItem = (props: NewsItemProps) => (
-  <View
+  <TouchableOpacity
     {...props}
     style={[styles.container, props.style]}
   >
@@ -21,5 +21,5 @@ export const NewsItem = (props: NewsItemProps) => (
       source={props.imageSource}
       style={styles.image}
     />
-  </View>
+  </TouchableOpacity>
 )

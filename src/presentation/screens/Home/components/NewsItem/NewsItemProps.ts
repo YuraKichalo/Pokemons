@@ -1,6 +1,6 @@
-import { ImageSourcePropType, ViewProps } from 'react-native'
+import { ImageSourcePropType, TouchableOpacityProps } from 'react-native'
 
-export interface NewsItemProps extends ViewProps {
+export interface NewsItemProps extends TouchableOpacityProps {
   title: string
   date: string
   imageSource: ImageSourcePropType

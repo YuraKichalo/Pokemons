@@ -12,7 +12,7 @@ export class HomeRouter {
     this.navigation.navigate(AppRoutes.Pokedex)
   }
 
-  public navigateToNews = () => {
-    this.navigation.navigate(AppRoutes.News)
+  public navigateToNews = (selectedItemIndex?: number) => {
+    this.navigation.navigate(AppRoutes.News, { selectedItemIndex })
   }
 }

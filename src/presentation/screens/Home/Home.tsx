@@ -74,6 +74,7 @@ export const Home = observer(() => {
                   title={newsItem.title}
                   date={newsItem.date}
                   imageSource={newsItem.imageSource}
+                  onPress={() => viewModel.onNewsPress(index)}
                 />
                 {index !== viewModel.news.length - 1 && (
                   <Divider

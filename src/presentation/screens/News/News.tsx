@@ -1,17 +1,22 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import { useRoute } from '@react-navigation/native'
 import { Divider, Header, Screen } from 'presentation/components'
 import { styles } from './styles'
 import { ScrollView } from 'react-native'
 import { NewsViewModel } from './NewsViewModel'
 import { NewsItem } from './components/NewsItem'
-import { COLORS } from '../../assets/theme'
+import { COLORS } from 'presentation/assets'
+import { NewsRouteProp } from './NewsRouteProp'
 
 export const News = () => {
   const [viewModel] = useState(() => new NewsViewModel())
+  const scrollViewRef = useRef<ScrollView>(null)
+  const route = useRoute<NewsRouteProp>()
 
   return (
     <ScrollView
       contentContainerStyle={styles.scrollContainer}
+      ref={scrollViewRef}
     >
       <Screen style={styles.container}>
         <Header />
@@ -22,6 +27,14 @@ export const News = () => {
               title={newsItem.title}
               date={newsItem.date}
               text={newsItem.text}
+              onLayout={(event => {
+                index === route.params.selectedItemIndex &&
+                scrollViewRef.current?.scrollTo({
+                  x: 0,
+                  y: event.nativeEvent.layout.y,
+                  animated: true
+                })
+              })}
             />
             {viewModel.news.length !== index + 1 && (
               <Divider

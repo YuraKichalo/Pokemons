@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/NewsViewModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/components/NewsItem/NewsItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/components/NewsItem/NewsItemProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/components/NewsItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/components/NewsItem/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/News/NewsRouteProp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-resources.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-resources.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/News.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/news/News.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/NewsDataSource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/news/NewsDataSource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/HomeRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeRouter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/HomeViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/HomeViewModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItemProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/components/NewsItem/NewsItemProps.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/News/News.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/News/News.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/News/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/News/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -186,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610289019792</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added News screen with content">
+      <created>1610479933675</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610479933675</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,9 +216,18 @@
     <MESSAGE value="added base navigation" />
     <MESSAGE value="added base Pokedex screen &amp; fixed issue with React navigation" />
     <MESSAGE value="added title and header to Pokedex screen &amp; IconGoBack and Header components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added title and header to Pokedex screen &amp; IconGoBack and Header components" />
+    <MESSAGE value="added News screen with content" />
+    <option name="LAST_COMMIT_MESSAGE" value="added News screen with content" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1610479932579">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1610479932579" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1610479935411">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1610479935411" />
     <state x="392" y="369" width="602" height="490" key="find.popup" timestamp="1610479352978">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

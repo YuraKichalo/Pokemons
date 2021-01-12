@@ -25,4 +25,8 @@ export class HomeViewModel {
   public onViewAllPress = () => {
     this.router.navigateToNews()
   }
+
+  public onNewsPress = (selectedItemIndex: number) => {
+    this.router.navigateToNews(selectedItemIndex)
+  }
 }
