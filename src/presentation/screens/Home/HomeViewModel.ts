@@ -4,8 +4,8 @@ import { HomeRouter } from './HomeRouter'
 import { Strings } from 'presentation/assets'
 
 export class HomeViewModel {
-  public get pokemonNews() {
-    return NewsDataSource
+  public get news() {
+    return NewsDataSource.getNews()
   }
 
   private router: HomeRouter

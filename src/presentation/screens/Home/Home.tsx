@@ -27,6 +27,7 @@ export const Home = observer(() => {
   return (
     <ScrollView
       contentContainerStyle={styles.scrollContainer}
+      showsVerticalScrollIndicator={false}
     >
       <Screen style={styles.container}>
         <View style={styles.topContentContainer}>
@@ -67,14 +68,14 @@ export const Home = observer(() => {
             </Body>
           </Row>
           <View style={styles.newsItemsContainer}>
-            {viewModel.pokemonNews.map((newsItem, index) => (
+            {viewModel.news.map((newsItem, index) => (
               <React.Fragment key={index}>
                 <NewsItem
                   title={newsItem.title}
                   date={newsItem.date}
                   imageSource={newsItem.imageSource}
                 />
-                {index !== viewModel.pokemonNews.length - 1 && (
+                {index !== viewModel.news.length - 1 && (
                   <Divider
                     height={1}
                     color={COLORS.gray}

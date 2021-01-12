@@ -1,10 +1,10 @@
 import { News } from './News'
 import { Images } from 'presentation/assets'
 
-export const NewsDataSource: News = [
+const NewsData: News = [
   {
     title: 'Pokemon Rumble Rush Arrive Soon',
-    description: 'Lorem ipsum dolor sit amet, mel te ocurreret vituperata, ' +
+    text: 'Lorem ipsum dolor sit amet, mel te ocurreret vituperata, ' +
       'at his cibo summo. Iusto meliore veritus est an, ex idque etiam cum, ' +
       'cu odio vivendo mel. Etiam dicit ea usu, ea eos affert omnium, id eum ' +
       'elit oblique urbanitas. Cum recteque appellantur te. His in tollit doctus ' +
@@ -15,7 +15,7 @@ export const NewsDataSource: News = [
   },
   {
     title: 'How Detective Pikachu sets up a VERY different sequel',
-    description: 'Lorem ipsum dolor sit amet, mel te ocurreret vituperata, ' +
+    text: 'Lorem ipsum dolor sit amet, mel te ocurreret vituperata, ' +
       'at his cibo summo. Iusto meliore veritus est an, ex idque etiam cum, ' +
       'cu odio vivendo mel. Etiam dicit ea usu, ea eos affert omnium, id eum ' +
       'elit oblique urbanitas. Cum recteque appellantur te. His in tollit doctus ' +
@@ -25,3 +25,7 @@ export const NewsDataSource: News = [
     imageSource: Images.detectivePikachu
   }
 ]
+
+export const NewsDataSource = new class {
+  public getNews = () => NewsData
+}()
