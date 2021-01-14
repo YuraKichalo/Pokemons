@@ -14,38 +14,42 @@ export const News = () => {
   const route = useRoute<NewsRouteProp>()
 
   return (
-    <ScrollView
-      contentContainerStyle={styles.scrollContainer}
-      ref={scrollViewRef}
-    >
-      <Screen style={styles.container}>
-        <Header />
-        {viewModel.news.map((newsItem, index) => (
-          <React.Fragment key={index}>
-            <NewsItem
-              imageSource={newsItem.imageSource}
-              title={newsItem.title}
-              date={newsItem.date}
-              text={newsItem.text}
-              onLayout={(event => {
-                index === route.params.selectedItemIndex &&
-                scrollViewRef.current?.scrollTo({
-                  x: 0,
-                  y: event.nativeEvent.layout.y,
-                  animated: true
-                })
-              })}
-            />
-            {viewModel.news.length !== index + 1 && (
-              <Divider
-                height={2}
-                color={COLORS.darkGray}
-                style={styles.divider}
+    <Screen style={styles.container}>
+      <Header />
+      <ScrollView
+        contentContainerStyle={styles.scrollContainer}
+        ref={scrollViewRef}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* For some reason if use here <View> or use nothing - content will not scroll */}
+        <Screen>
+          {viewModel.news.map((newsItem, index) => (
+            <React.Fragment key={index}>
+              <NewsItem
+                imageSource={newsItem.imageSource}
+                title={newsItem.title}
+                date={newsItem.date}
+                text={newsItem.text}
+                onLayout={(event => {
+                  index === route.params.selectedItemIndex &&
+                  scrollViewRef.current?.scrollTo({
+                    x: 0,
+                    y: event.nativeEvent.layout.y,
+                    animated: true
+                  })
+                })}
               />
-            )}
-          </React.Fragment>
-        ))}
-      </Screen>
-    </ScrollView>
+              {viewModel.news.length !== index + 1 && (
+                <Divider
+                  height={2}
+                  color={COLORS.darkGray}
+                  style={styles.divider}
+                />
+              )}
+            </React.Fragment>
+          ))}
+        </Screen>
+      </ScrollView>
+    </Screen>
   )
 }
