@@ -6,7 +6,9 @@ module.exports = {
       root: ['./'],
       alias: {
         presentation: './src/presentation',
-        news: './src/news'
+        news: './src/news',
+        api: './src/api',
+        pokemons: './src/pokemons'
       }
     }],
     ["@babel/plugin-proposal-decorators", {
