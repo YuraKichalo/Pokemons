@@ -13,8 +13,4 @@ export class PokedexViewModel {
     const pokemonNames = await PokemonApi.getPokemonNames()
     this.pokemonNames = pokemonNames!
   }
-
-  public setPokemonNames = (names: string[]) => {
-    this.pokemonNames = names
-  }
 }

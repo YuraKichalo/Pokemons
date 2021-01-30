@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { observer } from 'mobx-react'
 import { styles } from './styles'
-import { Body, Header, Screen, Title } from 'presentation/components'
-import { COLORS, Strings } from 'presentation/assets'
+import { Header, Screen, Title } from 'presentation/components'
+import { Strings } from 'presentation/assets'
 import { PokedexViewModel } from './PokedexViewModel'
-import { ActivityIndicator, View } from 'react-native'
+import * as States from './states'
 
 export const Pokedex = observer(() => {
   const [viewModel] = useState(() => new PokedexViewModel())
@@ -16,20 +16,11 @@ export const Pokedex = observer(() => {
         {Strings.pokedex.title}
       </Title>
       {viewModel.pokemonNames.length === 0 && (
-        <View style={styles.activityIndicatorContainer}>
-          <ActivityIndicator
-            size={'large'}
-            color={COLORS.green}
-          />
-        </View>
+        <States.Loading />
       )}
 
       {viewModel.pokemonNames.length !== 0 && (
-        viewModel.pokemonNames.map(item => (
-          <Body key={item}>
-            {item}
-          </Body>
-        ))
+        <States.Pokemons viewModel={viewModel} />
       )}
     </Screen>
   )
