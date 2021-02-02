@@ -1,1 +1,2 @@
-export * from './deserializePokemonNamesResponse'
+export * from './deserializeGetPokemonByNameResponse'
+export * from './deserializeGetPokemonNamesResponse'

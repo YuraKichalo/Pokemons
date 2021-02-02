@@ -6,12 +6,12 @@ import { styles } from './styles'
 
 export const Pokemons = ({ viewModel }: PokemonsProps) => (
   <View>
-    {viewModel.pokemonNames.map(item => (
+    {viewModel.pokemons.map(item => (
       <Body
-        key={item}
+        key={item.name}
         style={styles.tempTextStyles}
       >
-        {item}
+        {item.name}
       </Body>
     ))}
   </View>

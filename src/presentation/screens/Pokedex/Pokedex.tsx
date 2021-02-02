@@ -15,11 +15,11 @@ export const Pokedex = observer(() => {
       <Title>
         {Strings.pokedex.title}
       </Title>
-      {viewModel.pokemonNames.length === 0 && (
+      {viewModel.pokemons.length === 0 && (
         <States.Loading />
       )}
 
-      {viewModel.pokemonNames.length !== 0 && (
+      {viewModel.pokemons.length !== 0 && (
         <States.Pokemons viewModel={viewModel} />
       )}
     </Screen>

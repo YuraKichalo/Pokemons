@@ -7,7 +7,18 @@ export const PokemonApi = new class extends Api {
 
     try {
       const response = await this.api.get(url)
-      return Deserializers.deserializePokemonNamesResponse(response.data)
+      return Deserializers.deserializeGetPokemonNamesResponse(response.data)
+    } catch (error) {
+      console.error(`${error.message} on URL: ${url}`)
+    }
+  }
+
+  public getPokemonByName = async (name: string) => {
+    const url = `pokemon/${name}`
+
+    try {
+      const response = await this.api.get(url)
+      return Deserializers.deserializeGetPokemonByNameResponse(response.data)
     } catch (error) {
       console.error(`${error.message} on URL: ${url}`)
     }

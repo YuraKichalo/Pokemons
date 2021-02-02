@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/Loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/PokemonsProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemons/Pokemon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonByNameResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokemons/api/responces/GetPokemonByNameResponse.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/PokemonApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/PokemonApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializePokemonNamesResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonNamesResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/deserializers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/responces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/responces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -68,14 +68,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/presentation/components/Icon" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pokemons" />
       <recent name="$PROJECT_DIR$/src/presentation/screens/Home" />
       <recent name="$PROJECT_DIR$/android/app/src/main/assets/fonts" />
       <recent name="$PROJECT_DIR$/src/presentation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/presentation/components/Icon" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,7 +94,9 @@
       <workItem from="1610281481734" duration="6251000" />
       <workItem from="1610632713802" duration="3570000" />
       <workItem from="1611937777235" duration="2440000" />
-      <workItem from="1612005995322" duration="10412000" />
+      <workItem from="1612005995322" duration="10476000" />
+      <workItem from="1612102280071" duration="5494000" />
+      <workItem from="1612269434359" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -214,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612017368794</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added states to Pokedex screen">
+      <created>1612018091414</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612018091414</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,21 +260,22 @@
     <MESSAGE value="added possibility to autoscroll to selected news item" />
     <MESSAGE value="added new pokemon news item, updated scroll on News screen" />
     <MESSAGE value="added api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api" />
+    <MESSAGE value="added states to Pokedex screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="added states to Pokedex screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1612017367647">
+    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1612018091057">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612017367647" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612017371181">
+    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612018091057" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612018103408">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612017371181" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612018103408" />
     <state x="392" y="369" width="602" height="490" key="find.popup" timestamp="1612017447393">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
