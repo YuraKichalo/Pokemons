@@ -1,18 +1,20 @@
 import React from 'react'
-import { View } from 'react-native'
+import { FlatList, View } from 'react-native'
 import { PokemonsProps } from './PokemonsProps'
-import { Body } from 'presentation/components'
 import { styles } from './styles'
+import { PokemonItem } from './components/PokemonItem'
 
 export const Pokemons = ({ viewModel }: PokemonsProps) => (
-  <View>
-    {viewModel.pokemons.map(item => (
-      <Body
-        key={item.name}
-        style={styles.tempTextStyles}
-      >
-        {item.name}
-      </Body>
-    ))}
+  <View style={styles.container}>
+    <FlatList
+      keyExtractor={(pokemon) => pokemon.name}
+      data={viewModel.pokemons}
+      renderItem={({ item }) => (
+        <PokemonItem
+          name={item.name}
+          types={item.types}
+        />
+      )}
+    />
   </View>
 )

@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pokemons/Pokemon.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonByNameResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokemons/api/responces/GetPokemonByNameResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/api/PokemonApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/PokemonApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializePokemonNamesResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonNamesResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/api/deserializers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/api/responces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/responces/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -96,7 +92,7 @@
       <workItem from="1611937777235" duration="2440000" />
       <workItem from="1612005995322" duration="10476000" />
       <workItem from="1612102280071" duration="5494000" />
-      <workItem from="1612269434359" duration="1370000" />
+      <workItem from="1612269434359" duration="3244000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -224,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612018091414</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added api implementation to take each pokemon">
+      <created>1612271213948</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612271213948</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,21 +264,22 @@
     <MESSAGE value="added new pokemon news item, updated scroll on News screen" />
     <MESSAGE value="added api" />
     <MESSAGE value="added states to Pokedex screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="added states to Pokedex screen" />
+    <MESSAGE value="added api implementation to take each pokemon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added api implementation to take each pokemon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1612018091057">
+    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1612271213316">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612018091057" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612018103408">
+    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612271213316" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612271216576">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612018103408" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612271216576" />
     <state x="392" y="369" width="602" height="490" key="find.popup" timestamp="1612017447393">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
