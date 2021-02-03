@@ -9,6 +9,9 @@ export const Pokemons = ({ viewModel }: PokemonsProps) => (
     <FlatList
       keyExtractor={(pokemon) => pokemon.name}
       data={viewModel.pokemons}
+      contentContainerStyle={styles.pokemonsList}
+      showsVerticalScrollIndicator={false}
+      numColumns={2}
       renderItem={({ item }) => (
         <PokemonItem
           name={item.name}

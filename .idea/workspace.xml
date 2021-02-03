@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/utils/capitalize.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -92,7 +92,8 @@
       <workItem from="1611937777235" duration="2440000" />
       <workItem from="1612005995322" duration="10476000" />
       <workItem from="1612102280071" duration="5494000" />
-      <workItem from="1612269434359" duration="3244000" />
+      <workItem from="1612269434359" duration="3889000" />
+      <workItem from="1612343797503" duration="3965000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612271213948</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added FlatList and PokemonItem component">
+      <created>1612274024686</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612274024686</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,24 +273,25 @@
     <MESSAGE value="added api" />
     <MESSAGE value="added states to Pokedex screen" />
     <MESSAGE value="added api implementation to take each pokemon" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api implementation to take each pokemon" />
+    <MESSAGE value="added FlatList and PokemonItem component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added FlatList and PokemonItem component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="191" y="186" key="CommitChangelistDialog2" timestamp="1612271213316">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1612370866611">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="191" y="186" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612271213316" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612271216576">
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612370866611" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1612274026545">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612271216576" />
-    <state x="392" y="369" width="602" height="490" key="find.popup" timestamp="1612017447393">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612274026545" />
+    <state x="392" y="369" width="621" height="490" key="find.popup" timestamp="1612369684807">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="392" y="369" width="602" height="490" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1612017447393" />
+    <state x="392" y="369" width="621" height="490" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1612369684807" />
   </component>
 </project>
