@@ -1,10 +1,13 @@
 export interface GetPokemonByNameResponse {
   name: string
+  sprites: {
+    'front_default': string
+  }
   types: {
-    slot: number,
+    slot: number
     type: {
-      name: string,
-      utl: string
+      name: string
+      url: string
     }
   }[]
 }

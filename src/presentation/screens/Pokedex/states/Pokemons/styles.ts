@@ -5,6 +5,6 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   pokemonsList: {
-    marginTop: 35
+    paddingVertical: 35
   }
 })

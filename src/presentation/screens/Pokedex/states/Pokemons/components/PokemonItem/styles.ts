@@ -4,10 +4,12 @@ import { COLORS } from 'presentation/assets'
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.green,
-    paddingVertical: 30,
+    height: 150,
     paddingHorizontal: 20,
     borderRadius: 20,
-    width: '50%'
+    flex: 1,
+    justifyContent: 'center',
+    margin: 6
   },
   name: {
     fontSize: 20,
@@ -32,13 +34,11 @@ export const styles = StyleSheet.create({
       }
     })
   },
-  imagePlaceholder: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
-    backgroundColor: COLORS.yellow,
+  pokemonImage: {
     position: 'absolute',
-    bottom: 20,
-    right: 20
+    bottom: 0,
+    right: 0,
+    width: 90,
+    height: 90
   }
 })

@@ -1,8 +1,8 @@
 import React from 'react'
+import { Image, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
 import { Body, ChildrenSpacing } from 'presentation/components'
 import { PokemonItemProps } from './PokemonItemProps'
-import { TouchableOpacity, View } from 'react-native'
 import { capitalize } from 'presentation/utils'
 
 export const PokemonItem = (props: PokemonItemProps) => (
@@ -20,7 +20,11 @@ export const PokemonItem = (props: PokemonItemProps) => (
         </Body>
       ))}
     </ChildrenSpacing>
-    {/* Here should be an pokemon image */}
-    <View style={styles.imagePlaceholder} />
+    <Image
+      source={{
+        uri: props.sprite
+      }}
+      style={styles.pokemonImage}
+    />
   </TouchableOpacity>
 )

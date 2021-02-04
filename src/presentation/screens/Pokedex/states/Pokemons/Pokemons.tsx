@@ -16,6 +16,7 @@ export const Pokemons = ({ viewModel }: PokemonsProps) => (
         <PokemonItem
           name={item.name}
           types={item.types}
+          sprite={item.sprite}
         />
       )}
     />
