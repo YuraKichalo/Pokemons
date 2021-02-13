@@ -2,7 +2,7 @@ import React from 'react'
 import { FlatList, View } from 'react-native'
 import { PokemonsProps } from './PokemonsProps'
 import { styles } from './styles'
-import { PokemonItem } from './components/PokemonItem'
+import { PokemonItem } from './components'
 
 export const Pokemons = ({ viewModel }: PokemonsProps) => (
   <View style={styles.container}>

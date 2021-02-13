@@ -1,9 +1,9 @@
 import { Platform, StyleSheet } from 'react-native'
+import color from 'color'
 import { COLORS } from 'presentation/assets'
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.green,
     height: 150,
     paddingHorizontal: 20,
     borderRadius: 20,
@@ -17,14 +17,16 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10
   },
-  type: {
-    color: COLORS.primary,
+  typeContainer: {
+    backgroundColor: color(COLORS.secondary).alpha(0.2).string(),
+    overflow: 'hidden',
     alignSelf: 'flex-start',
     paddingHorizontal: 13,
     paddingVertical: 5,
-    borderRadius: 12,
-    overflow: 'hidden',
-    backgroundColor: COLORS.red,
+    borderRadius: 12
+  },
+  type: {
+    color: COLORS.primary,
     ...Platform.select({
       ios: {
         fontWeight: '500'
