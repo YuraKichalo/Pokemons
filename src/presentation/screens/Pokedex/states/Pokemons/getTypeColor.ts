@@ -8,7 +8,7 @@ export const getTypeColor = (type: string) => {
     case PokemonTypeNames.Fighting:
       return COLORS.fighting
     case PokemonTypeNames.Flying:
-      return COLORS.fighting
+      return COLORS.flying
     case PokemonTypeNames.Poison:
       return COLORS.poison
     case PokemonTypeNames.Ground:

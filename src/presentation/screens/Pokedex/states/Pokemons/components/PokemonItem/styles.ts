@@ -5,11 +5,14 @@ import { COLORS } from 'presentation/assets'
 export const styles = StyleSheet.create({
   container: {
     height: 150,
-    paddingHorizontal: 20,
-    paddingTop: 25,
-    borderRadius: 20,
     flex: 1,
     margin: 6
+  },
+  gradientContainer: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 25,
+    borderRadius: 20
   },
   name: {
     fontSize: 20,
