@@ -2,8 +2,8 @@ import { Api } from 'api'
 import * as Deserializers from './deserializers'
 
 export const PokemonApi = new class extends Api {
-  public getPokemonNames = async () => {
-    const url = 'pokemon'
+  public getPokemonNames = async (offset: number) => {
+    const url = `pokemon?offset=${offset}&limit=10`
 
     try {
       const response = await this.api.get(url)

@@ -4,6 +4,8 @@ import { PokemonsProps } from './PokemonsProps'
 import { styles } from './styles'
 import { PokemonItem } from './components'
 
+const NEW_POKEMONS_COUNT = 10
+
 export const Pokemons = ({ viewModel }: PokemonsProps) => (
   <View style={styles.container}>
     <FlatList
@@ -19,6 +21,10 @@ export const Pokemons = ({ viewModel }: PokemonsProps) => (
           sprite={item.sprite}
         />
       )}
+      onRefresh={() => {
+        viewModel.setOffset(NEW_POKEMONS_COUNT)
+      }}
+      refreshing={viewModel.isLoading}
     />
   </View>
 )

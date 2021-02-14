@@ -6,9 +6,9 @@ export const styles = StyleSheet.create({
   container: {
     height: 150,
     paddingHorizontal: 20,
+    paddingTop: 25,
     borderRadius: 20,
     flex: 1,
-    justifyContent: 'center',
     margin: 6
   },
   name: {
