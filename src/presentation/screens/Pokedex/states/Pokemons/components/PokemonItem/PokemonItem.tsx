@@ -26,7 +26,10 @@ export const PokemonItem = (props: PokemonItemProps) => (
       </Body>
       <ChildrenSpacing spacing={8}>
         {props.types.map(type => (
-          <View style={styles.typeContainer}>
+          <View
+            key={type}
+            style={styles.typeContainer}
+          >
             <Body style={styles.type}>
               {type}
             </Body>

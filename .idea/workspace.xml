@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
+    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="added blur view in a bottom of a pokemons list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
@@ -22,9 +22,9 @@
       <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/getTypeColor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/getTypeColor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,8 @@
       <workItem from="1612343797503" duration="4174000" />
       <workItem from="1612462395917" duration="3481000" />
       <workItem from="1613214569518" duration="7322000" />
-      <workItem from="1613299323140" duration="8791000" />
+      <workItem from="1613299323140" duration="9055000" />
+      <workItem from="1613809090278" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -279,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613309169358</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added gradient for PokemonItem with two types">
+      <created>1613311147364</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613311147364</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,21 +330,27 @@
     <MESSAGE value="added pokemon sprites and sizes to PokemonItem" />
     <MESSAGE value="added background colors to PokemonItem" />
     <MESSAGE value="added pull to refresh on pokemons list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pull to refresh on pokemons list" />
+    <MESSAGE value="added gradient for PokemonItem with two types" />
+    <MESSAGE value="added blur view in a bottom of a pokemons list" />
+    <option name="LAST_COMMIT_MESSAGE" value="added blur view in a bottom of a pokemons list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613309168738">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613837877446">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613309168738" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613309171886">
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613837877446" />
+    <state x="712" y="306" key="RollbackChangesDialog" timestamp="1613811662017">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613309171886" />
+    <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1613811662017" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613311149441">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613311149441" />
     <state x="392" y="369" width="621" height="490" key="find.popup" timestamp="1613308722722">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
