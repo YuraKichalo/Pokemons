@@ -13,6 +13,7 @@ export const Header = (props: HeaderProps) => (
     <IconGoBack style={styles.iconGoBack} />
     {props.rightIconTitle && (
       <TouchableOpacity
+        onPress={props.onRightIconPress}
         style={styles.iconMenuContainer}
       >
         <Icon

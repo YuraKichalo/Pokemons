@@ -1,27 +1,45 @@
 import React, { useState } from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { useNavigation } from '@react-navigation/native'
 import { observer } from 'mobx-react'
-import { styles } from './styles'
-import { Header, Screen, Title } from 'presentation/components'
-import { Strings } from 'presentation/assets'
 import { PokedexViewModel } from './PokedexViewModel'
-import * as States from './states'
+import { PokedexStackParamsList } from './PokedexStackParamsList'
+import * as Screens from './screens'
+import { PokedexRoutes } from './PokedexRoutes'
+import { PokedexNavigationProp } from './PokedexNavigationProp'
+import { PokedexRouter } from './PokedexRouter'
+
+const Stack = createStackNavigator<PokedexStackParamsList>()
 
 export const Pokedex = observer(() => {
+  const navigation = useNavigation<PokedexNavigationProp>()
+  const [router] = useState(() => new PokedexRouter(navigation))
   const [viewModel] = useState(() => new PokedexViewModel())
 
   return (
-    <Screen style={styles.container}>
-      <Header rightIconTitle='menu' />
-      <Title>
-        {Strings.pokedex.title}
-      </Title>
-      {viewModel.pokemons.length === 0 && (
-        <States.Loading />
-      )}
-
-      {viewModel.pokemons.length !== 0 && (
-        <States.Pokemons viewModel={viewModel} />
-      )}
-    </Screen>
+    <Stack.Navigator
+      screenOptions={{ headerShown: false }}
+      mode='modal'
+    >
+      <Stack.Screen name={PokedexRoutes.Pokedex}>
+        {() => (
+          <Screens.Pokedex
+            viewModel={viewModel}
+            router={router}
+          />
+        )}
+      </Stack.Screen>
+      <Stack.Screen
+        name={PokedexRoutes.MenuModal}
+        options={{
+          cardStyle: {
+            backgroundColor: 'transparent',
+            opacity: 0.99
+          }
+        }}
+      >
+        {() => <Screens.MenuModal />}
+      </Stack.Screen>
+    </Stack.Navigator>
   )
 })

@@ -4,28 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="added blur view in a bottom of a pokemons list">
+    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexNavigationProp.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRoutes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexStackParamsList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/Pokedex.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/PokedexProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-MusicAppTests/Pods-MusicApp-MusicAppTests.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOS/Pods-MusicApp-tvOS.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOS/Pods-MusicApp-tvOS.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOS/Pods-MusicApp-tvOS.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOS/Pods-MusicApp-tvOS.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOSTests/Pods-MusicApp-tvOSTests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOSTests/Pods-MusicApp-tvOSTests.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOSTests/Pods-MusicApp-tvOSTests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp-tvOSTests/Pods-MusicApp-tvOSTests.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/components/Header/HeaderProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/components/Header/HeaderProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Loading/Loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Loading/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Loading/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Loading/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/PokemonsProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/PokemonsProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/components/PokemonItem/PokemonItemProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/components/PokemonItem/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/components/PokemonItem/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/getTypeColor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/getTypeColor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/states/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
@@ -77,15 +87,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/presentation/components/Icon" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex" />
       <recent name="$PROJECT_DIR$/src/pokemons" />
       <recent name="$PROJECT_DIR$/src/presentation/screens/Home" />
       <recent name="$PROJECT_DIR$/android/app/src/main/assets/fonts" />
       <recent name="$PROJECT_DIR$/src/presentation" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/presentation/components/Icon" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -110,7 +121,7 @@
       <workItem from="1612462395917" duration="3481000" />
       <workItem from="1613214569518" duration="7322000" />
       <workItem from="1613299323140" duration="9055000" />
-      <workItem from="1613809090278" duration="4990000" />
+      <workItem from="1613809090278" duration="8284000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -287,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613311147364</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added blur view in a bottom of a pokemons list">
+      <created>1613837970914</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1613837970914</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,18 +357,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613837877446">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613837969878">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613837877446" />
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613837969878" />
     <state x="712" y="306" key="RollbackChangesDialog" timestamp="1613811662017">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1613811662017" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613311149441">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613837976425">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613311149441" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613837976425" />
     <state x="392" y="369" width="621" height="490" key="find.popup" timestamp="1613308722722">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

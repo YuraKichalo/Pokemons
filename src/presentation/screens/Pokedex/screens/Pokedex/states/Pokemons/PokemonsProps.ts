@@ -1,4 +1,4 @@
-import { PokedexViewModel } from '../../PokedexViewModel'
+import { PokedexViewModel } from '../../../../PokedexViewModel'
 
 export interface PokemonsProps {
   viewModel: PokedexViewModel
