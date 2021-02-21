@@ -14,6 +14,9 @@ export const english = {
     viewAll: 'View All'
   },
   pokedex: {
-    title: 'Pokedex'
+    title: 'Pokedex',
+    menuModal: {
+      favouritePokemons: 'Favourite Pokemons'
+    }
   }
 }

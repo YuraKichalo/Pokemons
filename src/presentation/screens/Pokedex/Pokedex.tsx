@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
+import { Dimensions } from 'react-native'
+import { CardStyleInterpolators, createStackNavigator, StackCardInterpolationProps } from '@react-navigation/stack'
 import { useNavigation } from '@react-navigation/native'
 import { observer } from 'mobx-react'
 import { PokedexViewModel } from './PokedexViewModel'
@@ -32,10 +33,24 @@ export const Pokedex = observer(() => {
       <Stack.Screen
         name={PokedexRoutes.MenuModal}
         options={{
+          gestureEnabled: true,
+          cardShadowEnabled: true,
+          cardOverlayEnabled: true,
+          gestureResponseDistance: {
+            vertical: Dimensions.get('screen').height
+          },
           cardStyle: {
-            backgroundColor: 'transparent',
-            opacity: 0.99
-          }
+            backgroundColor: 'transparent'
+          },
+          cardStyleInterpolator: (props: StackCardInterpolationProps) => ({
+            ...CardStyleInterpolators.forVerticalIOS(props),
+            overlayStyle: {
+              opacity: props.current.progress.interpolate({
+                inputRange: [0, 0.36, 1],
+                outputRange: [0, 0.3, 0.3]
+              })
+            }
+          })
         }}
       >
         {() => <Screens.MenuModal />}
