@@ -3,7 +3,7 @@ import { View, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { observer } from 'mobx-react'
 import { COLORS, Strings } from 'presentation/assets'
-import { Body, Screen, TextInput, Title, Row, Divider } from 'presentation/components'
+import { Body, Screen, Title, Row, Divider } from 'presentation/components'
 import { styles } from './styles'
 import { CategoryButton, NewsItem } from './components'
 import { HomeViewModel } from './HomeViewModel'
@@ -36,10 +36,6 @@ export const Home = observer(() => {
           >
             {Strings.home.title}
           </Title>
-          <TextInput
-            placeholder={Strings.home.inputPlaceholder}
-            containerStyles={styles.inputContainer}
-          />
           <View style={styles.categoriesContainer}>
             {CATEGORIES.map((category) => (
               <CategoryButton

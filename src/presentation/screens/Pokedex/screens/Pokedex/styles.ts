@@ -5,5 +5,9 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.primary,
     paddingHorizontal: 19
+  },
+  inputContainer: {
+    marginTop: 35,
+    marginBottom: 10
   }
 })

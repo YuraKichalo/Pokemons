@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/Item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/ItemProps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetails.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Home/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexNavigationProp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexNavigationProp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRouter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/Pokedex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/Pokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/Pokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/PokemonsProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/PokemonsProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/states/Pokemons/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/Pokedex/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +110,11 @@
       <workItem from="1613214569518" duration="7322000" />
       <workItem from="1613299323140" duration="9055000" />
       <workItem from="1613809090278" duration="8367000" />
-      <workItem from="1613930252055" duration="4234000" />
+      <workItem from="1613930252055" duration="4332000" />
+      <workItem from="1614266286381" duration="608000" />
+      <workItem from="1615792691223" duration="4915000" />
+      <workItem from="1616259298453" duration="147000" />
+      <workItem from="1616322613855" duration="3194000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -293,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613841542479</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added menu modal &amp; first modal item">
+      <created>1613934833963</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1613934833963</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +332,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added new project configs" />
     <MESSAGE value="added Title &amp; Body components and theme &amp; locals" />
     <MESSAGE value="added TextInput &amp; Icon components" />
     <MESSAGE value="added categories" />
@@ -338,29 +356,30 @@
     <MESSAGE value="added gradient for PokemonItem with two types" />
     <MESSAGE value="added blur view in a bottom of a pokemons list" />
     <MESSAGE value="refactored Pokedex screen &amp; added test modal screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored Pokedex screen &amp; added test modal screen" />
+    <MESSAGE value="added menu modal &amp; first modal item" />
+    <option name="LAST_COMMIT_MESSAGE" value="added menu modal &amp; first modal item" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613841542024">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1613934833410">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613841542024" />
-    <state x="712" y="306" key="RollbackChangesDialog" timestamp="1613811662017">
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1613934833410" />
+    <state x="712" y="306" key="RollbackChangesDialog" timestamp="1616323047851">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1613811662017" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613841547409">
+    <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1616323047851" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1613934836633">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613841547409" />
-    <state x="392" y="369" width="621" height="490" key="find.popup" timestamp="1613308722722">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1613934836633" />
+    <state x="392" y="369" width="621" height="490" key="find.popup" timestamp="1616325206849">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="392" y="369" width="621" height="490" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1613308722722" />
+    <state x="392" y="369" width="621" height="490" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616325206849" />
     <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1613934344518">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

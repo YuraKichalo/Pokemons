@@ -29,9 +29,6 @@ export const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-between'
   },
-  inputContainer: {
-    marginTop: 35
-  },
   flatList: {
     paddingBottom: 15
   },

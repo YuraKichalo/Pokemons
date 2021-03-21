@@ -1,4 +1,8 @@
-import { NavigationProp } from '@react-navigation/native'
+import { NavigationProp, CompositeNavigationProp } from '@react-navigation/native'
 import { PokedexStackParamsList } from './PokedexStackParamsList'
+import { RootStackParamsList } from 'presentation'
 
-export type PokedexNavigationProp = NavigationProp<PokedexStackParamsList, 'Pokedex'>
+export type PokedexNavigationProp = CompositeNavigationProp<
+  NavigationProp<PokedexStackParamsList, 'Pokedex'>,
+  NavigationProp<RootStackParamsList>
+>

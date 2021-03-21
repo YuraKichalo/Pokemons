@@ -22,6 +22,10 @@ export const App = () => (
         name={AppRoutes.News}
         component={Screens.News}
       />
+      <Stack.Screen
+        name={AppRoutes.PokemonDetails}
+        component={Screens.PokemonDetails}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 )

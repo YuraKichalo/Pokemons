@@ -8,7 +8,7 @@ import { PokemonItem } from './components'
 const NEW_POKEMONS_COUNT = 10
 const BLUR_VIEW_HIGHT = 55
 
-export const Pokemons = ({ viewModel }: PokemonsProps) => (
+export const Pokemons = ({ viewModel, router }: PokemonsProps) => (
   <>
     <View style={styles.container}>
       <FlatList
@@ -22,6 +22,7 @@ export const Pokemons = ({ viewModel }: PokemonsProps) => (
             name={item.name}
             types={item.types}
             sprite={item.sprite}
+            onPress={() => router.navigateToPokemonDetail()}
           />
         )}
         onRefresh={() => {

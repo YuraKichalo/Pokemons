@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   pokemonsList: {
-    paddingTop: 35
+    paddingTop: 25
   },
   blur: {
     position: 'absolute',

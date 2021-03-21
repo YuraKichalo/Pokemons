@@ -3,9 +3,14 @@ import { Pokemon, PokemonApi } from 'pokemons'
 
 export class PokedexViewModel {
   public pokemonNames: string[] = []
-  public pokemons: Pokemon[] = []
+  public fetchedPokemons: Pokemon[] = []
   public offset = 0
   public isLoading = false
+  public pokemonsInputValue = ''
+
+  public get pokemons() {
+    return this.fetchedPokemons.filter(pokemon => pokemon.name.startsWith(this.pokemonsInputValue.toLowerCase()))
+  }
 
   public constructor() {
     makeAutoObservable(this)
@@ -19,6 +24,10 @@ export class PokedexViewModel {
         }),
       { fireImmediately: true }
     )
+  }
+
+  public setPokemonsInputValue = (value: string) => {
+    this.pokemonsInputValue = value
   }
 
   public setIsLoading = (isLoading: boolean) => {
@@ -39,7 +48,7 @@ export class PokedexViewModel {
     await Promise.all([
       this.pokemonNames.map(async (name) => {
         const pokemon = await PokemonApi.getPokemonByName(name)
-        this.pokemons.push(pokemon!)
+        this.fetchedPokemons.push(pokemon!)
       })
     ])
   }

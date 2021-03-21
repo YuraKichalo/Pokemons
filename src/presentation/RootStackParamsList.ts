@@ -4,4 +4,5 @@ export type RootStackParamsList = {
     selectedItemIndex?: number
   }
   Pokedex: undefined
+  PokemonDetails: undefined
 }

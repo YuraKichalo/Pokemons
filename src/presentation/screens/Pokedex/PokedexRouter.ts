@@ -1,5 +1,6 @@
 import { PokedexNavigationProp } from './PokedexNavigationProp'
 import { PokedexRoutes } from './PokedexRoutes'
+import { AppRoutes } from 'presentation'
 
 export class PokedexRouter {
   private navigation: PokedexNavigationProp
@@ -10,5 +11,9 @@ export class PokedexRouter {
 
   public navigateToMenuModal = () => {
     this.navigation.navigate(PokedexRoutes.MenuModal)
+  }
+
+  public navigateToPokemonDetail = () => {
+    this.navigation.navigate(AppRoutes.PokemonDetails)
   }
 }
