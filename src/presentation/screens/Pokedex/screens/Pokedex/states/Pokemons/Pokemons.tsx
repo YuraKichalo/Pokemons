@@ -22,7 +22,7 @@ export const Pokemons = ({ viewModel, router }: PokemonsProps) => (
             name={item.name}
             types={item.types}
             sprite={item.sprite}
-            onPress={() => router.navigateToPokemonDetail()}
+            onPress={() => router.navigateToPokemonDetail(item)}
           />
         )}
         onRefresh={() => {
