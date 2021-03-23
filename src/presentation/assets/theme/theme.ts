@@ -35,5 +35,6 @@ export const COLORS: ThemeColors = {
   purple: '#7b538b',
   brown: '#b77b74',
   darkGray: '#7b7e82',
-  gray: '#c9c9c9'
+  gray: '#c9c9c9',
+  black: '#000'
 }

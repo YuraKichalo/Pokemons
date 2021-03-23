@@ -9,5 +9,6 @@ export interface GetPokemonByNameResponse {
       name: string
       url: string
     }
-  }[]
+  }[],
+  order: number
 }

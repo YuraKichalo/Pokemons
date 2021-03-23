@@ -29,4 +29,5 @@ export type ThemeColors = {
   brown: string
   darkGray: string
   gray: string
+  black: string
 }

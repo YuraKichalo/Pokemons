@@ -1,9 +1,11 @@
 import React from 'react'
-import { TouchableOpacity, TouchableOpacityProps } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { Icon } from '../Icon'
+import { IconGoBackProps } from './IconGoBackProps'
+import { COLORS } from '../../assets/theme'
 
-export const IconGoBack = (props: TouchableOpacityProps) => {
+export const IconGoBack = (props: IconGoBackProps) => {
   const navigation = useNavigation()
 
   return (
@@ -14,7 +16,12 @@ export const IconGoBack = (props: TouchableOpacityProps) => {
       <Icon
         size={30}
         name='arrow-back'
+        color={props.color}
       />
     </TouchableOpacity>
   )
+}
+
+IconGoBack.defaultProps = {
+  color: COLORS.black
 }

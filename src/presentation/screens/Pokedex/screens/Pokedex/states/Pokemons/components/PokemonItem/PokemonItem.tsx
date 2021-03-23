@@ -4,8 +4,7 @@ import LinearGradient from 'react-native-linear-gradient'
 import { styles } from './styles'
 import { Body, ChildrenSpacing } from 'presentation/components'
 import { PokemonItemProps } from './PokemonItemProps'
-import { capitalize } from 'presentation/utils'
-import { getTypeColor } from '../../getTypeColor'
+import { capitalize, getTypeColor } from 'presentation/utils'
 
 export const PokemonItem = (props: PokemonItemProps) => (
   <TouchableOpacity
