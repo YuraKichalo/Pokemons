@@ -6,9 +6,14 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   tab: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: COLORS.yellow
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: COLORS.gray
+  },
+  get selectedTab() {
+    return {
+      ...this.tab,
+      color: COLORS.black
+    }
   }
 })

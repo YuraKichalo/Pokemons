@@ -18,5 +18,13 @@ export const english = {
     menuModal: {
       favouritePokemons: 'Favourite Pokemons'
     }
+  },
+  pokemonDetails: {
+    tabs: [
+      'About',
+      'Base Stats',
+      'Evolution',
+      'Moves'
+    ]
   }
 }

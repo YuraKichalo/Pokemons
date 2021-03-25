@@ -7,7 +7,6 @@ import { styles } from './styles'
 import { Body, Header, Row, Screen, Title } from 'presentation/components'
 import { PokemonDetailsRouteProp } from './PokemonDetailsRouteProp'
 import { capitalize, getTypeColor } from 'presentation/utils'
-import { COLORS } from '../../assets/theme'
 import { TabsController } from './components/TabsController'
 
 const formatPokemonsOrderValue = (number: number) => {
@@ -74,7 +73,6 @@ export const PokemonDetails = () => {
           style={styles.pokemonImage}
         />
         <TabsController
-          amount={4}
           selectedTabIndex={swiperActiveIndex}
           style={styles.tabsController}
         />
@@ -83,10 +81,10 @@ export const PokemonDetails = () => {
           showsPagination={false}
           onIndexChanged={setSwiperActiveIndex}
         >
-          <View style={{ flex: 1, backgroundColor: COLORS.red }} />
-          <View style={{ flex: 1, backgroundColor: COLORS.green }} />
-          <View style={{ flex: 1, backgroundColor: COLORS.blue }} />
-          <View style={{ flex: 1, backgroundColor: COLORS.yellow }} />
+          <View style={{ flex: 1 }} />
+          <View style={{ flex: 1 }} />
+          <View style={{ flex: 1 }} />
+          <View style={{ flex: 1 }} />
         </Swiper>
       </View>
     </Screen>
