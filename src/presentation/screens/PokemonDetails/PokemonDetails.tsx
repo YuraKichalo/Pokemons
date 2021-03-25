@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Image, StatusBar, View } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
+import Swiper from 'react-native-swiper'
 import { useRoute } from '@react-navigation/native'
 import { styles } from './styles'
 import { Body, Header, Row, Screen, Title } from 'presentation/components'
 import { PokemonDetailsRouteProp } from './PokemonDetailsRouteProp'
 import { capitalize, getTypeColor } from 'presentation/utils'
+import { COLORS } from '../../assets/theme'
+import { TabsController } from './components/TabsController'
 
-const formatPokemonsOrder = (number: number) => {
+const formatPokemonsOrderValue = (number: number) => {
   if (number >= 100) {
     return `#${number}`
   } else if (number >= 10) {
@@ -20,6 +23,7 @@ const formatPokemonsOrder = (number: number) => {
 export const PokemonDetails = () => {
   const route = useRoute<PokemonDetailsRouteProp>()
   const { pokemon } = route.params
+  const [swiperActiveIndex, setSwiperActiveIndex] = useState(0)
 
   return (
     <Screen style={{ backgroundColor: getTypeColor(pokemon.types[0]) }}>
@@ -46,7 +50,7 @@ export const PokemonDetails = () => {
             {capitalize(pokemon.name)}
           </Title>
           <Body style={styles.order}>
-            {formatPokemonsOrder(pokemon.order)}
+            {formatPokemonsOrderValue(pokemon.order)}
           </Body>
         </Row>
         <Row>
@@ -69,6 +73,21 @@ export const PokemonDetails = () => {
           }}
           style={styles.pokemonImage}
         />
+        <TabsController
+          amount={4}
+          selectedTabIndex={swiperActiveIndex}
+          style={styles.tabsController}
+        />
+        <Swiper
+          loop={false}
+          showsPagination={false}
+          onIndexChanged={setSwiperActiveIndex}
+        >
+          <View style={{ flex: 1, backgroundColor: COLORS.red }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.green }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.blue }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.yellow }} />
+        </Swiper>
       </View>
     </Screen>
   )

@@ -47,8 +47,11 @@ export const styles = StyleSheet.create({
   },
   pokemonImage: {
     alignSelf: 'center',
-    width: '50%',
+    width: '55%',
     height: '50%',
     marginTop: '-40%'
+  },
+  tabsController: {
+    paddingHorizontal: 20
   }
 })

@@ -5,13 +5,19 @@ import { styles } from './styles'
 
 export const Screen = (props: ScreenProps) => {
   const screen = (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <View
-        {...props}
-        style={[styles.screen, props.style]}
-      />
-    </TouchableWithoutFeedback>
+    <View
+      {...props}
+      style={[styles.screen, props.style]}
+    />
   )
+
+  if (props.hideKeyboardWhenTouch) {
+    return (
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        {screen}
+      </TouchableWithoutFeedback>
+    )
+  }
 
   return screen
 }
