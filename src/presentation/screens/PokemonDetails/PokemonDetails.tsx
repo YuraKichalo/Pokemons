@@ -8,6 +8,7 @@ import { Body, Header, Row, Screen, Title } from 'presentation/components'
 import { PokemonDetailsRouteProp } from './PokemonDetailsRouteProp'
 import { capitalize, getTypeColor } from 'presentation/utils'
 import { TabsController } from './components/TabsController'
+import * as Tabs from './tabs'
 
 const formatPokemonsOrderValue = (number: number) => {
   if (number >= 100) {
@@ -81,10 +82,10 @@ export const PokemonDetails = () => {
           showsPagination={false}
           onIndexChanged={setSwiperActiveIndex}
         >
-          <View style={{ flex: 1 }} />
-          <View style={{ flex: 1 }} />
-          <View style={{ flex: 1 }} />
-          <View style={{ flex: 1 }} />
+          <Tabs.About />
+          <Tabs.BaseStats />
+          <Tabs.Evolution />
+          <Tabs.Moves />
         </Swiper>
       </View>
     </Screen>

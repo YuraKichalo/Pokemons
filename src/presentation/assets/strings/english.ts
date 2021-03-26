@@ -25,6 +25,17 @@ export const english = {
       'Base Stats',
       'Evolution',
       'Moves'
-    ]
+    ],
+    about: {
+      height: 'Height',
+      weight: 'Weight',
+      breeding: 'Breeding',
+      gender: 'Gender',
+      eggGroups: 'Egg Groups',
+      eggCycle: 'Egg Cycle',
+      location: 'Location',
+      training: 'Training',
+      baseEXP: 'Base EXP'
+    }
   }
 }
