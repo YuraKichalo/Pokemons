@@ -14,6 +14,7 @@ export const TabsController = (props: TabsControllerProps) => (
 
       return (
         <Body
+          key={index}
           style={[
             styles.tab,
             selected && styles.selectedTab

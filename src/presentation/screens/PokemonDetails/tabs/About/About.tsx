@@ -1,8 +1,8 @@
 import React from 'react'
 import { View } from 'react-native'
 import { styles } from './styles'
-import { Body } from 'presentation/components'
-import { Strings } from 'presentation/assets'
+import { Body, ChildrenSpacing, Icon, Row } from 'presentation/components'
+import { COLORS, Strings } from 'presentation/assets'
 
 export const About = () => (
   <View style={styles.container}>
@@ -32,6 +32,50 @@ export const About = () => (
     <Body style={styles.subtitle}>
       {Strings.pokemonDetails.about.breeding}
     </Body>
+    <Row>
+      <View style={styles.breedingSubtitlesContainer}>
+        <ChildrenSpacing spacing={13}>
+          <Body style={styles.breedingSubtitle}>
+            {Strings.pokemonDetails.about.gender}
+          </Body>
+          <Body style={styles.breedingSubtitle}>
+            {Strings.pokemonDetails.about.eggGroups}
+          </Body>
+          <Body style={styles.breedingSubtitle}>
+            {Strings.pokemonDetails.about.eggCycle}
+          </Body>
+        </ChildrenSpacing>
+      </View>
+      <View>
+        <ChildrenSpacing spacing={13}>
+          <Row>
+            <Row
+              centered
+              style={styles.maleIconAndValueContainer}
+            >
+              <Icon
+                size={15}
+                name='male'
+                color={COLORS.blue}
+                style={styles.genderIcon}
+              />
+              <Body>87%</Body>
+            </Row>
+            <Row centered>
+              <Icon
+                size={15}
+                name='female'
+                color={COLORS.red}
+                style={styles.genderIcon}
+              />
+              <Body>13%</Body>
+            </Row>
+          </Row>
+          <Body>Monster</Body>
+          <Body>Grass</Body>
+        </ChildrenSpacing>
+      </View>
+    </Row>
     <Body style={styles.subtitle}>
       {Strings.pokemonDetails.about.location}
     </Body>

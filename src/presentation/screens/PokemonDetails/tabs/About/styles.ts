@@ -53,6 +53,20 @@ export const styles = StyleSheet.create({
   },
   subtitle: {
     fontWeight: 'bold',
-    fontSize: 16
+    fontSize: 16,
+    marginBottom: 20
+  },
+  breedingSubtitlesContainer: {
+    marginRight: 25
+  },
+  breedingSubtitle: {
+    fontWeight: 'bold',
+    color: COLORS.darkGray
+  },
+  genderIcon: {
+    marginRight: 5
+  },
+  maleIconAndValueContainer: {
+    marginRight: 25
   }
 })
