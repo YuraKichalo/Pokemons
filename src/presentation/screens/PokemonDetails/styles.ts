@@ -53,6 +53,7 @@ export const styles = StyleSheet.create({
   },
   tabsController: {
     paddingHorizontal: 20,
-    marginTop: -15
+    marginTop: -15,
+    marginBottom: 20
   }
 })

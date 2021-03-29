@@ -4,8 +4,7 @@ import { COLORS } from 'presentation/assets'
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20,
-    paddingTop: 20
+    paddingHorizontal: 20
   },
   description: {
     ...Platform.select({
@@ -56,17 +55,27 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 20
   },
+  breedingContent: {
+    marginBottom: 25
+  },
   breedingSubtitlesContainer: {
     marginRight: 25
   },
-  breedingSubtitle: {
+  sectionSubtitle: {
     fontWeight: 'bold',
-    color: COLORS.darkGray
+    color: COLORS.darkGray,
+    marginRight: 25
   },
   genderIcon: {
     marginRight: 5
   },
   maleIconAndValueContainer: {
     marginRight: 25
+  },
+  map: {
+    width: '100%',
+    height: 200,
+    borderRadius: 15,
+    marginBottom: 25
   }
 })

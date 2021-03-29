@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Image, View } from 'react-native'
 import { styles } from './styles'
 import { Body, ChildrenSpacing, Icon, Row } from 'presentation/components'
-import { COLORS, Strings } from 'presentation/assets'
+import { COLORS, Images, Strings } from 'presentation/assets'
 
 export const About = () => (
   <View style={styles.container}>
@@ -32,16 +32,16 @@ export const About = () => (
     <Body style={styles.subtitle}>
       {Strings.pokemonDetails.about.breeding}
     </Body>
-    <Row>
+    <Row style={styles.breedingContent}>
       <View style={styles.breedingSubtitlesContainer}>
         <ChildrenSpacing spacing={13}>
-          <Body style={styles.breedingSubtitle}>
+          <Body style={styles.sectionSubtitle}>
             {Strings.pokemonDetails.about.gender}
           </Body>
-          <Body style={styles.breedingSubtitle}>
+          <Body style={styles.sectionSubtitle}>
             {Strings.pokemonDetails.about.eggGroups}
           </Body>
-          <Body style={styles.breedingSubtitle}>
+          <Body style={styles.sectionSubtitle}>
             {Strings.pokemonDetails.about.eggCycle}
           </Body>
         </ChildrenSpacing>
@@ -79,8 +79,20 @@ export const About = () => (
     <Body style={styles.subtitle}>
       {Strings.pokemonDetails.about.location}
     </Body>
+    <Image
+      source={Images.mockedMap}
+      style={styles.map}
+    />
     <Body style={styles.subtitle}>
       {Strings.pokemonDetails.about.training}
     </Body>
+    <Row centered>
+      <Body style={styles.sectionSubtitle}>
+        Base exp
+      </Body>
+      <Body>
+        64
+      </Body>
+    </Row>
   </View>
 )

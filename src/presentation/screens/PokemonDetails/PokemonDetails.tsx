@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Image, StatusBar, View } from 'react-native'
+import { Image, ScrollView, StatusBar, View } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import Swiper from 'react-native-swiper'
 import { useRoute } from '@react-navigation/native'
@@ -77,16 +77,18 @@ export const PokemonDetails = () => {
           selectedTabIndex={swiperActiveIndex}
           style={styles.tabsController}
         />
-        <Swiper
-          loop={false}
-          showsPagination={false}
-          onIndexChanged={setSwiperActiveIndex}
-        >
-          <Tabs.About />
-          <Tabs.BaseStats />
-          <Tabs.Evolution />
-          <Tabs.Moves />
-        </Swiper>
+        <ScrollView>
+          <Swiper
+            loop={false}
+            showsPagination={false}
+            onIndexChanged={setSwiperActiveIndex}
+          >
+            <Tabs.About />
+            <Tabs.BaseStats />
+            <Tabs.Evolution />
+            <Tabs.Moves />
+          </Swiper>
+        </ScrollView>
       </View>
     </Screen>
   )
