@@ -8,7 +8,8 @@ module.exports = {
         presentation: './src/presentation',
         news: './src/news',
         api: './src/api',
-        pokemons: './src/pokemons'
+        pokemons: './src/pokemons',
+        species: './src/species'
       }
     }],
     ["@babel/plugin-proposal-decorators", {

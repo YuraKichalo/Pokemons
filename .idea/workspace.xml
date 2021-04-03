@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/assets/images/mockedMap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/AboutProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/AboutViewModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/Specie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/SpeciesApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/deserializers/deserializeGetPokemonSpeciesResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/deserializers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/responses/GetPokemonSpeciesResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/api/responses/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/species/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/assets/images/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/images/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/Pokemon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/Pokemon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonByNameResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/deserializers/deserializeGetPokemonByNameResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/api/responces/GetPokemonByNameResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/api/responces/GetPokemonByNameResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/About.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -110,7 +124,8 @@
       <workItem from="1616692025682" duration="5629000" />
       <workItem from="1616742881925" duration="4124000" />
       <workItem from="1616943060239" duration="3042000" />
-      <workItem from="1617043449895" duration="2152000" />
+      <workItem from="1617043449895" duration="2651000" />
+      <workItem from="1617441772649" duration="8129000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -357,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616959832575</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="finished of adding UI to About tab">
+      <created>1617045856644</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617045856644</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +399,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added base navigation" />
     <MESSAGE value="added base Pokedex screen &amp; fixed issue with React navigation" />
     <MESSAGE value="added title and header to Pokedex screen &amp; IconGoBack and Header components" />
     <MESSAGE value="added News screen with content" />
@@ -402,32 +423,37 @@
     <MESSAGE value="add TabsController component" />
     <MESSAGE value="added base component for each tab and start adding of mocked content to About.tsx tab" />
     <MESSAGE value="added Breeding section UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Breeding section UI" />
+    <MESSAGE value="finished of adding UI to About tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished of adding UI to About tab" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="565" y="510" key="#ESLint/0.0.1920.1200@0.0.1920.1200" timestamp="1610636992156" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1616959831522">
+    <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617447122509">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1616959831522" />
+    <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617447122509" />
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1617045856171">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1617045856171" />
     <state x="712" y="306" key="RollbackChangesDialog" timestamp="1616323047851">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1616323047851" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1616959877142">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1617045858978">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1616959877142" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1617045858978" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1616744372002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="392" y="369" width="727" height="554" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616744372002" />
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1616746193070">
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1617443358606">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616746193070" />
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1617443358606" />
   </component>
 </project>

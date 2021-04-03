@@ -83,7 +83,7 @@ export const PokemonDetails = () => {
             showsPagination={false}
             onIndexChanged={setSwiperActiveIndex}
           >
-            <Tabs.About />
+            <Tabs.About pokemon={pokemon} />
             <Tabs.BaseStats />
             <Tabs.Evolution />
             <Tabs.Moves />

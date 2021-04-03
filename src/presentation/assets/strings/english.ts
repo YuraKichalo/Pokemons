@@ -1,4 +1,8 @@
 export const english = {
+  units: {
+    kilogram: 'kg',
+    centimeter: 'cm'
+  },
   home: {
     title: 'What Pokemon\nare you looking for?',
     inputPlaceholder: 'Search for pokemons...',
@@ -32,7 +36,7 @@ export const english = {
       breeding: 'Breeding',
       gender: 'Gender',
       eggGroups: 'Egg Groups',
-      eggCycle: 'Egg Cycle',
+      color: 'Color',
       location: 'Location',
       training: 'Training',
       baseEXP: 'Base EXP'

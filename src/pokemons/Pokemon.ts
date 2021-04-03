@@ -3,4 +3,10 @@ export type Pokemon = {
   sprite: string
   types: string[]
   order: number
+  baseExperience: number
+  height: number
+  weight: number
+  gender: {
+    malePercentage: number
+  }
 }
