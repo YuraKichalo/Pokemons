@@ -113,7 +113,7 @@ export const About = observer(({ pokemon }: AboutProps) => {
           Base exp
         </Body>
         <Body>
-          64
+          {viewModel.pokemon.baseExperience}
         </Body>
       </Row>
     </View>
