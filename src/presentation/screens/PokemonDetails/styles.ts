@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     width: '55%',
     height: '50%',
-    marginTop: '-40%'
+    marginTop: '-50%'
   },
   tabsController: {
     paddingHorizontal: 20,

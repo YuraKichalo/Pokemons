@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,7 @@
       <workItem from="1616742881925" duration="4124000" />
       <workItem from="1616943060239" duration="3042000" />
       <workItem from="1617043449895" duration="2651000" />
-      <workItem from="1617441772649" duration="8380000" />
+      <workItem from="1617441772649" duration="8550000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -366,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617450916129</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="finished About section">
+      <created>1617451092133</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617451092133</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +394,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added title and header to Pokedex screen &amp; IconGoBack and Header components" />
     <MESSAGE value="added News screen with content" />
     <MESSAGE value="added possibility to autoscroll to selected news item" />
     <MESSAGE value="added new pokemon news item, updated scroll on News screen" />
@@ -411,7 +418,8 @@
     <MESSAGE value="added Breeding section UI" />
     <MESSAGE value="finished of adding UI to About tab" />
     <MESSAGE value="added api for species and add api data to About page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api for species and add api data to About page" />
+    <MESSAGE value="finished About section" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished About section" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
@@ -422,18 +430,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617447122509" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1617450914889">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1617451091820">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1617450914889" />
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1617451091820" />
     <state x="712" y="306" key="RollbackChangesDialog" timestamp="1616323047851">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1616323047851" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1617450918230">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1617451093557">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1617450918230" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1617451093557" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1616744372002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
