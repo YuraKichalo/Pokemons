@@ -84,7 +84,7 @@ export const PokemonDetails = () => {
             onIndexChanged={setSwiperActiveIndex}
           >
             <Tabs.About pokemon={pokemon} />
-            <Tabs.BaseStats />
+            <Tabs.BaseStats pokemon={pokemon} />
             <Tabs.Evolution />
             <Tabs.Moves />
           </Swiper>

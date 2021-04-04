@@ -1,3 +1,5 @@
+import { Stat } from './Stat'
+
 export type Pokemon = {
   name: string
   sprite: string
@@ -9,4 +11,5 @@ export type Pokemon = {
   gender: {
     malePercentage: number
   }
+  stats: Stat[]
 }

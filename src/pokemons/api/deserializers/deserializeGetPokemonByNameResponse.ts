@@ -12,5 +12,11 @@ export const deserializeGetPokemonByNameResponse = (data: GetPokemonByNameRespon
   weight: data.weight,
   gender: {
     malePercentage: _.random(0, 100)
-  }
+  },
+  stats: data.stats.map(statItem => (
+    {
+      statValue: statItem.base_stat,
+      statName: statItem.stat.name
+    }
+  ))
 })
