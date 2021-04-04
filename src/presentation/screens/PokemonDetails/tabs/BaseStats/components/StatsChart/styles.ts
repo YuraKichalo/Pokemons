@@ -10,19 +10,20 @@ export const styles = StyleSheet.create({
     color: COLORS.darkGray
   },
   valuesContainer: {
-    flex: 1
+    marginRight: 15
   },
   value: {
-    marginRight: 15,
     fontWeight: 'bold'
   },
   valueIndicatorContainer: {
     backgroundColor: COLORS.gray,
-    flex: 1,
     borderRadius: 10
   },
   valueIndicator: {
     height: 4,
     borderRadius: 10
+  },
+  indicatorsContainer: {
+    flex: 1
   }
 })
