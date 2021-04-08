@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10
   },
   valueIndicator: {
-    height: 4,
+    height: 6,
     borderRadius: 10
   },
   indicatorsContainer: {

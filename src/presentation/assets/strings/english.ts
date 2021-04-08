@@ -40,6 +40,9 @@ export const english = {
       location: 'Location',
       training: 'Training',
       baseEXP: 'Base EXP'
+    },
+    baseStats: {
+      typeDefenses: 'Type defenses'
     }
   }
 }

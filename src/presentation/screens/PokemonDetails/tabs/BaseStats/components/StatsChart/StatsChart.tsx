@@ -48,7 +48,7 @@ export const StatsChart = (props: StatsChartProps) => {
         </View>
 
         <View style={styles.indicatorsContainer}>
-          <ChildrenSpacing spacing={28}>
+          <ChildrenSpacing spacing={26}>
             {props.stats.map((stat, index) => (
               <Row
                 centered

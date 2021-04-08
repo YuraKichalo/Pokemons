@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/About/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/BaseStats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/BaseStats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/components/StatsChart/StatsChart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/components/StatsChart/StatsChart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/components/StatsChart/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/components/StatsChart/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +112,8 @@
       <workItem from="1616943060239" duration="3042000" />
       <workItem from="1617043449895" duration="2651000" />
       <workItem from="1617441772649" duration="8770000" />
-      <workItem from="1617532533628" duration="6359000" />
+      <workItem from="1617532533628" duration="6593000" />
+      <workItem from="1617901787881" duration="4112000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -390,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617538739880</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="finished working on Stats Chart">
+      <created>1617540246705</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617540246705</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added new pokemon news item, updated scroll on News screen" />
     <MESSAGE value="added api" />
     <MESSAGE value="added states to Pokedex screen" />
     <MESSAGE value="added api implementation to take each pokemon" />
@@ -435,7 +446,8 @@
     <MESSAGE value="finished About section" />
     <MESSAGE value="Pokemon details screen UI improvements" />
     <MESSAGE value="added content to BaseStats tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="added content to BaseStats tab" />
+    <MESSAGE value="finished working on Stats Chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished working on Stats Chart" />
   </component>
   <component name="WindowStateProjectService">
     <state x="565" y="510" key="#ESLint" timestamp="1610636992156">
@@ -446,25 +458,25 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617447122509" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1617538739431">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1617540246305">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1617538739431" />
-    <state x="712" y="306" key="RollbackChangesDialog" timestamp="1616323047851">
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1617540246305" />
+    <state x="712" y="306" key="RollbackChangesDialog" timestamp="1617904127878">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1616323047851" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1617538742973">
+    <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617904127878" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1617540257871">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1617538742973" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1617540257871" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1616744372002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="392" y="369" width="727" height="554" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616744372002" />
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1617443358606">
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1617906305049">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1617443358606" />
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1617906305049" />
   </component>
 </project>
