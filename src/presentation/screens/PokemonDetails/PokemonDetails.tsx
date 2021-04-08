@@ -68,9 +68,7 @@ export const PokemonDetails = () => {
       </LinearGradient>
       <View style={styles.bottomContentContainer}>
         <Image
-          source={{
-            uri: pokemon.sprite
-          }}
+          source={{ uri: pokemon.sprite }}
           style={styles.pokemonImage}
         />
         <TabsController
@@ -85,7 +83,7 @@ export const PokemonDetails = () => {
           >
             <Tabs.About pokemon={pokemon} />
             <Tabs.BaseStats pokemon={pokemon} />
-            <Tabs.Evolution />
+            <Tabs.Evolution pokemon={pokemon} />
             <Tabs.Moves />
           </Swiper>
         </ScrollView>

@@ -43,6 +43,9 @@ export const english = {
     },
     baseStats: {
       typeDefenses: 'Type defenses'
+    },
+    evolution: {
+      chain: 'Evolution Chain'
     }
   }
 }
