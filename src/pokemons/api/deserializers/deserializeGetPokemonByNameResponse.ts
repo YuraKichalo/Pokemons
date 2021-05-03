@@ -3,6 +3,7 @@ import { Pokemon } from '../../Pokemon'
 import _ from 'lodash'
 
 export const deserializeGetPokemonByNameResponse = (data: GetPokemonByNameResponse) => (<Pokemon>{
+  id: data.id,
   name: data.name,
   sprite: data.sprites.front_default,
   types: data.types.map(typeItem => typeItem.type.name),

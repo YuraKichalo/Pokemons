@@ -9,7 +9,8 @@ module.exports = {
         news: './src/news',
         api: './src/api',
         pokemons: './src/pokemons',
-        species: './src/species'
+        species: './src/species',
+        evolution: './src/evolution'
       }
     }],
     ["@babel/plugin-proposal-decorators", {
