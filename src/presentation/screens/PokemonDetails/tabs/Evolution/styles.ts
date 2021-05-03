@@ -9,19 +9,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16
   },
-  pokemonImage: {
-    width: 120,
-    height: 120
-  },
-  chainRow: {
-    justifyContent: 'space-between'
-  },
-  levelContainer: {
-    alignItems: 'center'
-  },
-  level: {
-    fontWeight: 'bold'
-  },
   divider: {
     marginVertical: 25
   }
