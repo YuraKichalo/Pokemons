@@ -40,9 +40,7 @@ export const BaseStats = ({ pokemon }: BaseStatsProps) => (
       duo, qui ei dolor nostrud definitiones. Lorem ipsum dolor sit amet, mel te ocurreret vituperata,
       at his cibo summo. Iusto meliore veritus est an, ex idque etiam cum,
       cu odio vivendo mel. Etiam dicit ea usu, ea eos affert omnium, id eum
-      elit oblique urbanitas. Cum recteque appellantur te. His in tollit doctus
-      inciderint, ubique mediocrem reformidans his ut. Falli oratio torquatos ne
-      duo, qui ei dolor nostrud definitiones.
+      elit oblique urbanitas. Cum recteque appellantur te.
     </Body>
   </View>
 )

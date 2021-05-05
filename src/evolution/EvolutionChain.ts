@@ -11,7 +11,7 @@ export type EvolutionChain = {
         minEvolutionLevel: number
         evolutionDetails: []
         evolvesTo: null
-      }
+      } | null
     }
   }
 }

@@ -46,11 +46,10 @@ export class EvolutionViewModel {
     if (evolutionChain) {
       this.evolutionChainId = evolutionChain.id
       this.firstEvolutionTriggeringLevel = evolutionChain.chain.evolvesTo.minEvolutionLevel
-      this.secondEvolutionTriggeringLevel = evolutionChain.chain.evolvesTo.evolvesTo.minEvolutionLevel
-      this.secondEvolutionTriggeringLevel = evolutionChain.chain.evolvesTo.evolvesTo.minEvolutionLevel
+      this.secondEvolutionTriggeringLevel = evolutionChain.chain.evolvesTo.evolvesTo?.minEvolutionLevel!
       this.firstEvolutionPokemonName = evolutionChain.chain.pokemonName
       this.secondEvolutionPokemonName = evolutionChain.chain.evolvesTo.pokemonName
-      this.thirdEvolutionPokemonName = evolutionChain.chain.evolvesTo.evolvesTo.pokemonName
+      this.thirdEvolutionPokemonName = evolutionChain.chain.evolvesTo.evolvesTo?.pokemonName!
     }
   }
 

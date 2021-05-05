@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pokemons/PokemonsStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionChain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/evolution/EvolutionChain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evolution/api/EvolutionApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/evolution/api/EvolutionApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evolution/api/deserializers/deserializeGetEvolutionChainResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/evolution/api/deserializers/deserializeGetEvolutionChainResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexViewModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/BaseStats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/BaseStats/BaseStats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/Evolution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/Evolution.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionViewModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/species/Specie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Specie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/species/api/deserializers/deserializeGetPokemonSpeciesResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/api/deserializers/deserializeGetPokemonSpeciesResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/species/api/responses/GetPokemonSpeciesResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/api/responses/GetPokemonSpeciesResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRowProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRowProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,7 @@
       <workItem from="1617441772649" duration="8770000" />
       <workItem from="1617532533628" duration="6593000" />
       <workItem from="1617901787881" duration="5942000" />
-      <workItem from="1620039350877" duration="14149000" />
+      <workItem from="1620039350877" duration="16585000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -437,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620046810509</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="added Evolution tab with api">
+      <created>1620212644409</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1620212644409</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +461,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added base look to PokemonItem component" />
     <MESSAGE value="added pokemon sprites and sizes to PokemonItem" />
     <MESSAGE value="added background colors to PokemonItem" />
     <MESSAGE value="added pull to refresh on pokemons list" />
@@ -482,32 +485,33 @@
     <MESSAGE value="added base UI to Evolution tab" />
     <MESSAGE value="created Evolution Row component" />
     <MESSAGE value="added EvolutionApi" />
-    <option name="LAST_COMMIT_MESSAGE" value="added EvolutionApi" />
+    <MESSAGE value="added Evolution tab with api" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Evolution tab with api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617447122509">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617447122509" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1620046810106">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1620212643919">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1620046810106" />
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1620212643919" />
     <state x="712" y="306" key="RollbackChangesDialog" timestamp="1617904127878">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617904127878" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1620046821488">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1620212657798">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1620046821488" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1620212657798" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1616744372002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="392" y="369" width="727" height="554" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616744372002" />
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1617906630194">
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1620231246375">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1617906630194" />
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1620231246375" />
   </component>
 </project>

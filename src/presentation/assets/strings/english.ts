@@ -45,7 +45,8 @@ export const english = {
       typeDefenses: 'Type defenses'
     },
     evolution: {
-      chain: 'Evolution Chain'
+      chain: 'Evolution Chain',
+      unknownLevel: 'unknown'
     }
   }
 }
