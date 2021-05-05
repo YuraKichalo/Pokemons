@@ -84,7 +84,6 @@ export const PokemonDetails = () => {
             <Tabs.About pokemon={pokemon} />
             <Tabs.BaseStats pokemon={pokemon} />
             <Tabs.Evolution pokemon={pokemon} />
-            <Tabs.Moves />
           </Swiper>
         </ScrollView>
       </View>

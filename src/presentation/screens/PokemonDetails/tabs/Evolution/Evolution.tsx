@@ -4,7 +4,7 @@ import { styles } from './styles'
 import { Body, Divider } from 'presentation/components'
 import { COLORS, Strings } from 'presentation/assets'
 import { EvolutionProps } from './EvolutionProps'
-import { EvolutionRow } from './components/EvolutionRow'
+import { EvolutionRow } from './components'
 import { observer } from 'mobx-react'
 import { EvolutionViewModel } from './EvolutionViewModel'
 
@@ -17,8 +17,8 @@ export const Evolution = observer(({ pokemon }: EvolutionProps) => {
         {Strings.pokemonDetails.evolution.chain} #{viewModel.evolutionChainId}
       </Body>
       <EvolutionRow
-        fromIconUri={viewModel.pokemonsFirstEvolutionImage!}
-        toIconUri={viewModel.pokemonsSecondEvolutionImage!}
+        fromIconUri={viewModel.pokemonFirstEvolutionImageUrl!}
+        toIconUri={viewModel.pokemonSecondEvolutionImageUrl!}
         level={viewModel.firstEvolutionTriggeringLevel ?? Strings.pokemonDetails.evolution.unknownLevel}
       />
       <Divider
@@ -27,9 +27,10 @@ export const Evolution = observer(({ pokemon }: EvolutionProps) => {
         style={styles.divider}
       />
       <EvolutionRow
-        fromIconUri={viewModel.pokemonsSecondEvolutionImage!}
-        toIconUri={viewModel.pokemonsThirdEvolutionImage!}
+        fromIconUri={viewModel.pokemonSecondEvolutionImageUrl!}
+        toIconUri={viewModel.pokemonThirdEvolutionImageUrl!}
         level={viewModel.secondEvolutionTriggeringLevel ?? Strings.pokemonDetails.evolution.unknownLevel}
+        style={styles.bottomEvolutionRow}
       />
       <Body>
         Lorem ipsum dolor sit amet, mel te ocurreret vituperata,

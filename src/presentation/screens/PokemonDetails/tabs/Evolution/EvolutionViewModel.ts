@@ -16,17 +16,17 @@ export class EvolutionViewModel {
     return PokemonsStore.fetchedPokemons
   }
 
-  public get pokemonsFirstEvolutionImage() {
+  public get pokemonFirstEvolutionImageUrl() {
     const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.firstEvolutionPokemonName)
     return evolvePokemon?.sprite
   }
 
-  public get pokemonsSecondEvolutionImage() {
+  public get pokemonSecondEvolutionImageUrl() {
     const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.secondEvolutionPokemonName)
     return evolvePokemon?.sprite
   }
 
-  public get pokemonsThirdEvolutionImage() {
+  public get pokemonThirdEvolutionImageUrl() {
     const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.thirdEvolutionPokemonName)
     return evolvePokemon?.sprite
   }

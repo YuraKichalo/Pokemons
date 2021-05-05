@@ -3,7 +3,7 @@ import { COLORS } from 'presentation/assets'
 
 export const styles = StyleSheet.create({
   container: {
-    justifyContent: 'space-between'
+    justifyContent: 'space-around'
   },
   tab: {
     fontSize: 15,

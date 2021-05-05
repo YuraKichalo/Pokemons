@@ -3,7 +3,11 @@ import { COLORS } from 'presentation/assets'
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: COLORS.red
+    alignItems: 'center'
+  },
+  pokemonsNotLoadedText: {
+    color: COLORS.darkGray,
+    textAlign: 'center',
+    fontSize: 12
   }
 })

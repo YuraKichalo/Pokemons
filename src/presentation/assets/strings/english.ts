@@ -27,8 +27,7 @@ export const english = {
     tabs: [
       'About',
       'Base Stats',
-      'Evolution',
-      'Moves'
+      'Evolution'
     ],
     about: {
       height: 'Height',
@@ -46,7 +45,10 @@ export const english = {
     },
     evolution: {
       chain: 'Evolution Chain',
-      unknownLevel: 'unknown'
+      unknownLevel: 'unknown',
+      loadMorePokemons: 'Please, load more \n' +
+        'pokemons to see full \n' +
+        'evolution chain'
     }
   }
 }

@@ -10,5 +10,8 @@ export const styles = StyleSheet.create({
   },
   divider: {
     marginVertical: 25
+  },
+  bottomEvolutionRow: {
+    marginBottom: 30
   }
 })
