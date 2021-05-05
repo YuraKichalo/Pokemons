@@ -1,12 +1,15 @@
 import { makeAutoObservable, reaction } from 'mobx'
-import { Pokemon, PokemonApi } from 'pokemons'
+import { PokemonApi, PokemonsStore } from 'pokemons'
 
 export class PokedexViewModel {
   public pokemonNames: string[] = []
-  public fetchedPokemons: Pokemon[] = []
   public offset = 0
   public isLoading = false
   public pokemonsInputValue = ''
+
+  public get fetchedPokemons() {
+    return PokemonsStore.fetchedPokemons
+  }
 
   public get pokemons() {
     return this.fetchedPokemons.filter(pokemon => pokemon.name.startsWith(this.pokemonsInputValue.toLowerCase()))
@@ -45,10 +48,12 @@ export class PokedexViewModel {
   }
 
   public getPokemon = async () => {
+    // const fetchedPokemons: Pokemon[] = []
+
     await Promise.all([
       this.pokemonNames.map(async (name) => {
         const pokemon = await PokemonApi.getPokemonByName(name)
-        this.fetchedPokemons.push(pokemon!)
+        PokemonsStore.setFetchedPokemons(pokemon!)
       })
     ])
   }

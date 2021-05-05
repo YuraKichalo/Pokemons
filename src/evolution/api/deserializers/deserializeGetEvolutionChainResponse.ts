@@ -8,9 +8,12 @@ export const deserializeGetEvolutionChainResponse = (data: GetEvolutionChainResp
     evolvesTo: {
       pokemonName: data.chain.evolves_to[0].species.name,
       minEvolutionLevel: data.chain.evolves_to[0].evolution_details[0].min_level,
+      evolutionDetails: data.chain.evolves_to[0].evolution_details,
       evolvesTo: {
         pokemonName: data.chain.evolves_to[0].evolves_to[0].species.name,
-        minEvolutionLevel: data.chain.evolves_to[0].evolves_to[0].evolution_details[0].min_level
+        minEvolutionLevel: data.chain.evolves_to[0].evolves_to[0].evolution_details[0].min_level,
+        evolutionDetails: data.chain.evolves_to[0].evolves_to[0].evolution_details,
+        evolvesTo: null
       }
     }
   }

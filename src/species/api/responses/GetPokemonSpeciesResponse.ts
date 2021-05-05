@@ -5,4 +5,7 @@ export interface GetPokemonSpeciesResponse {
   color: {
     name: string
   }
+  'evolution_chain': {
+    url: string
+  }
 }

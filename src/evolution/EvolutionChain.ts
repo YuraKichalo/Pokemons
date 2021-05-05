@@ -5,9 +5,12 @@ export type EvolutionChain = {
     evolvesTo: {
       pokemonName: string
       minEvolutionLevel: number
+      evolutionDetails: []
       evolvesTo: {
         pokemonName: string
         minEvolutionLevel: number
+        evolutionDetails: []
+        evolvesTo: null
       }
     }
   }
