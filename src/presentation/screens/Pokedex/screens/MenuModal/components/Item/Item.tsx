@@ -11,7 +11,7 @@ export const Item = (props: ItemProps) => (
     style={[styles.container, props.style]}
   >
     <Icon
-      size={22}
+      size={27}
       color={props.iconColor}
       name={props.iconName}
     />

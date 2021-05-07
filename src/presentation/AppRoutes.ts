@@ -2,5 +2,6 @@ export enum AppRoutes {
   Home = 'Home',
   News = 'News',
   Pokedex = 'Pokedex',
-  PokemonDetails = 'PokemonDetails'
+  PokemonDetails = 'PokemonDetails',
+  FavouritePokemons = 'FavouritePokemons'
 }

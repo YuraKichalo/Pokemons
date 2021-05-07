@@ -9,4 +9,5 @@ export type RootStackParamsList = {
   PokemonDetails: {
     pokemon: Pokemon
   }
+  FavouritePokemons: undefined
 }

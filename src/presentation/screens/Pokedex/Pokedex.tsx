@@ -53,7 +53,7 @@ export const Pokedex = observer(() => {
           })
         }}
       >
-        {() => <Screens.MenuModal />}
+        {() => <Screens.MenuModal router={router} />}
       </Stack.Screen>
     </Stack.Navigator>
   )

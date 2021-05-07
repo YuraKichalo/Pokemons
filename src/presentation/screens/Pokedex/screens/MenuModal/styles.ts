@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   card: {
-    height: '50%',
+    height: '30%',
     backgroundColor: COLORS.primary,
     paddingHorizontal: 20,
     paddingTop: 10,

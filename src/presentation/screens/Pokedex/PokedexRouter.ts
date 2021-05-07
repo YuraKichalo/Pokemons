@@ -17,4 +17,8 @@ export class PokedexRouter {
   public navigateToPokemonDetail = (pokemon: Pokemon) => {
     this.navigation.navigate(AppRoutes.PokemonDetails, { pokemon })
   }
+
+  public navigateToFavouritePokemons = () => {
+    this.navigation.navigate(AppRoutes.FavouritePokemons)
+  }
 }

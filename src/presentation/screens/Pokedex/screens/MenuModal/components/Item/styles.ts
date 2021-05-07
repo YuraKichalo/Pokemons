@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   title: {
-    fontSize: 18
+    fontSize: 22
   },
   textContainer: {
     marginLeft: 10,
