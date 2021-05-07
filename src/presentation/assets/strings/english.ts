@@ -52,6 +52,7 @@ export const english = {
     }
   },
   favouritePokemons: {
-    title: 'Favourite Pokemons'
+    title: 'Favourite Pokemons',
+    favouritePokemonsNotSelected: 'Favourite Pokemons are not selected :('
   }
 }
