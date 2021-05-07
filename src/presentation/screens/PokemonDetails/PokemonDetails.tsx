@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Image, ScrollView, StatusBar, View } from 'react-native'
+import { observer } from 'mobx-react'
 import LinearGradient from 'react-native-linear-gradient'
 import Swiper from 'react-native-swiper'
 import { useRoute } from '@react-navigation/native'
@@ -9,6 +10,7 @@ import { PokemonDetailsRouteProp } from './PokemonDetailsRouteProp'
 import { capitalize, getTypeColor } from 'presentation/utils'
 import { TabsController } from './components/TabsController'
 import * as Tabs from './tabs'
+import { PokemonDetailsViewModel } from './PokemonDetailsViewModel'
 
 const formatPokemonsOrderValue = (number: number) => {
   if (number >= 100) {
@@ -20,10 +22,10 @@ const formatPokemonsOrderValue = (number: number) => {
   }
 }
 
-export const PokemonDetails = () => {
+export const PokemonDetails = observer(() => {
   const route = useRoute<PokemonDetailsRouteProp>()
   const { pokemon } = route.params
-  const [swiperActiveIndex, setSwiperActiveIndex] = useState(0)
+  const [viewModel] = useState(() => new PokemonDetailsViewModel())
 
   return (
     <Screen style={{ backgroundColor: getTypeColor(pokemon.types[0]) }}>
@@ -39,8 +41,11 @@ export const PokemonDetails = () => {
       >
         <Header
           theme='light'
-          rightIconTitle='ios-heart-outline'
-          onRightIconPress={() => true}
+          rightIconTitle={viewModel.isPokemonFavourite ? 'ios-heart' : 'ios-heart-outline'}
+          onRightIconPress={() => {
+            viewModel.setIsPokemonFavourite(!viewModel.isPokemonFavourite)
+            viewModel.setFavouritePokemons(pokemon)
+          }}
         />
         <Row
           centered
@@ -72,14 +77,14 @@ export const PokemonDetails = () => {
           style={styles.pokemonImage}
         />
         <TabsController
-          selectedTabIndex={swiperActiveIndex}
+          selectedTabIndex={viewModel.swiperActiveIndex}
           style={styles.tabsController}
         />
         <ScrollView>
           <Swiper
             loop={false}
             showsPagination={false}
-            onIndexChanged={setSwiperActiveIndex}
+            onIndexChanged={viewModel.setSwiperActiveIndex}
           >
             <Tabs.About pokemon={pokemon} />
             <Tabs.BaseStats pokemon={pokemon} />
@@ -89,4 +94,4 @@ export const PokemonDetails = () => {
       </View>
     </Screen>
   )
-}
+})

@@ -50,5 +50,8 @@ export const english = {
         'pokemons to see full \n' +
         'evolution chain'
     }
+  },
+  favouritePokemons: {
+    title: 'Favourite Pokemons'
   }
 }

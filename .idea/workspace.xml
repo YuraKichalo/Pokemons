@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModalProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemonsViewModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetailsViewModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/AppRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/RootStackParamsList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/Pokedex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/PokedexRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/MenuModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/Item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/Item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/components/Item/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/Pokedex/screens/MenuModal/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemons/PokemonsStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokemons/PokemonsStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/assets/strings/english.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/PokemonDetails.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +117,7 @@
       <workItem from="1617532533628" duration="6593000" />
       <workItem from="1617901787881" duration="5942000" />
       <workItem from="1620039350877" duration="19300000" />
+      <workItem from="1620379120673" duration="2593000" />
     </task>
     <task id="LOCAL-00001" summary="added base project configurations">
       <created>1609255502976</created>
@@ -461,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620233761183</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="added FavouritePokemons base screen">
+      <created>1620379419657</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1620379419657</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +482,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added pull to refresh on pokemons list" />
     <MESSAGE value="added gradient for PokemonItem with two types" />
     <MESSAGE value="added blur view in a bottom of a pokemons list" />
     <MESSAGE value="refactored Pokedex screen &amp; added test modal screen" />
@@ -506,32 +506,33 @@
     <MESSAGE value="added Evolution tab with api" />
     <MESSAGE value="finished evolution tab" />
     <MESSAGE value="fixed bug of missing evolution images" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug of missing evolution images" />
+    <MESSAGE value="added FavouritePokemons base screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="added FavouritePokemons base screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617447122509">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617447122509" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1620233760698">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1620379418936">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1620233760698" />
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1620379418936" />
     <state x="712" y="306" key="RollbackChangesDialog" timestamp="1617904127878">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617904127878" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1620233881339">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1620379422683">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1620233881339" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1620379422683" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1616744372002">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="392" y="369" width="727" height="554" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1616744372002" />
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1620233045116">
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1620383774093">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1620233045116" />
+    <state x="343" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1620383774093" />
   </component>
 </project>

@@ -3,6 +3,7 @@ import { Pokemon } from './Pokemon'
 
 export const PokemonsStore = new class {
   public fetchedPokemons: Pokemon[] = []
+  public favouritePokemons: Pokemon[] = []
 
   constructor() {
     makeAutoObservable(this)
@@ -10,5 +11,9 @@ export const PokemonsStore = new class {
 
   public setFetchedPokemons = (pokemon: Pokemon) => {
     this.fetchedPokemons.push(pokemon)
+  }
+
+  public setFavouritePokemons = (pokemon: Pokemon) => {
+    this.favouritePokemons.push(pokemon)
   }
 }()
