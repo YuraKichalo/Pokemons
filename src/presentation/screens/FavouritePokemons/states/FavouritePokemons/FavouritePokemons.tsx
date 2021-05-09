@@ -1,6 +1,5 @@
 import React from 'react'
-import { FlatList } from 'react-native'
-import { Body } from 'presentation/components'
+import { FlatList, Image, TouchableOpacity } from 'react-native'
 import { FavouritePokemonsProps } from './FavouritePokemonsProps'
 import { styles } from './styles'
 
@@ -9,10 +8,15 @@ export const FavouritePokemons = ({ viewModel }: FavouritePokemonsProps) => (
     <FlatList
       keyExtractor={(pokemon) => pokemon.name}
       data={viewModel.favouritePokemons}
+      numColumns={2}
+      contentContainerStyle={styles.scrollContentContainer}
       renderItem={({ item }) => (
-        <Body style={styles.tempText}>
-          {item.name}
-        </Body>
+        <TouchableOpacity style={styles.pokemonImageContainer}>
+          <Image
+            source={{ uri: item.sprite }}
+            style={styles.pokemonImage}
+          />
+        </TouchableOpacity>
       )}
     />
   </>

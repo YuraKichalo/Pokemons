@@ -1,8 +1,16 @@
 import { StyleSheet } from 'react-native'
-import { COLORS } from 'presentation/assets'
 
 export const styles = StyleSheet.create({
-  tempText: {
-    color: COLORS.darkGray
+  scrollContentContainer: {
+    paddingVertical: 20
+  },
+  pokemonImageContainer: {
+    paddingVertical: 10,
+    flex: 1,
+    alignItems: 'center'
+  },
+  pokemonImage: {
+    width: 150,
+    height: 150
   }
 })
