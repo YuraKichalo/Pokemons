@@ -19,7 +19,9 @@ export const FavouritePokemons = observer(() => {
         <States.FavouritePokemonsNotSelected />
       )}
       {viewModel.favouritePokemons.length !== 0 && (
-        <States.FavouritePokemons viewModel={viewModel} />
+        <States.FavouritePokemons
+          viewModel={viewModel}
+        />
       )}
     </Screen>
   )
