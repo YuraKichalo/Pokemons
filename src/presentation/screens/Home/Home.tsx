@@ -39,9 +39,14 @@ export const Home = observer(() => {
           <View style={styles.categoriesContainer}>
             {CATEGORIES.map((category) => (
               <CategoryButton
+                disabled={category.title !== Strings.home.categories.pokedex}
                 key={category.title}
                 title={category.title}
-                color={category.color}
+                color={
+                  category.title !== Strings.home.categories.pokedex
+                    ? COLORS.gray
+                    : category.color
+                }
                 style={styles.categoryButton}
                 onPress={() => viewModel.onCategoryPress(category.title)}
               />

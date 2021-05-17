@@ -41,11 +41,8 @@ export const PokemonDetails = observer(() => {
       >
         <Header
           theme='light'
-          rightIconTitle={viewModel.isPokemonFavourite ? 'ios-heart' : 'ios-heart-outline'}
-          onRightIconPress={() => {
-            viewModel.setIsPokemonFavourite(!viewModel.isPokemonFavourite)
-            viewModel.setFavouritePokemons(pokemon)
-          }}
+          rightIconTitle={viewModel.favouritePokemons.includes(pokemon) ? 'ios-heart' : 'ios-heart-outline'}
+          onRightIconPress={() => viewModel.setFavouritePokemons(pokemon)}
         />
         <Row
           centered
