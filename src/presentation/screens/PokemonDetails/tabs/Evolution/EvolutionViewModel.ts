@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx'
 import { EvolutionApi } from 'evolution'
-import { PokemonsStore } from 'pokemons'
+import { Pokemon, PokemonsStore } from 'pokemons'
 import { SpeciesApi } from 'species'
 
 export class EvolutionViewModel {
@@ -16,26 +16,23 @@ export class EvolutionViewModel {
     return PokemonsStore.fetchedPokemons
   }
 
-  public get pokemonFirstEvolutionImageUrl() {
-    const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.firstEvolutionPokemonName)
-    return evolvePokemon?.sprite
+  public get pokemonFirstEvolution() {
+    return this.pokemons.find(pokemon => pokemon.name === this.firstEvolutionPokemonName)
   }
 
-  public get pokemonSecondEvolutionImageUrl() {
-    const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.secondEvolutionPokemonName)
-    return evolvePokemon?.sprite
+  public get pokemonSecondEvolution() {
+    return this.pokemons.find(pokemon => pokemon.name === this.secondEvolutionPokemonName)
   }
 
-  public get pokemonThirdEvolutionImageUrl() {
-    const evolvePokemon = this.pokemons.find(pokemon => pokemon.name === this.thirdEvolutionPokemonName)
-    return evolvePokemon?.sprite
+  public get pokemonThirdEvolution() {
+    return this.pokemons.find(pokemon => pokemon.name === this.thirdEvolutionPokemonName)
   }
 
-  private pokemonName: string
+  private currentPokemon: Pokemon
 
-  public constructor(pokemonName: string) {
+  public constructor(pokemon: Pokemon) {
     makeAutoObservable(this)
-    this.pokemonName = pokemonName
+    this.currentPokemon = pokemon
 
     this.getSpecie().then(this.getEvolutionChain)
   }
@@ -54,7 +51,7 @@ export class EvolutionViewModel {
   }
 
   private getSpecie = async () => {
-    const species = await SpeciesApi.getPokemonSpecie(this.pokemonName)
+    const species = await SpeciesApi.getPokemonSpecie(this.currentPokemon.name)
     if (species) {
       this.evolutionChainUrl = species.evolutionChainUrl
     }

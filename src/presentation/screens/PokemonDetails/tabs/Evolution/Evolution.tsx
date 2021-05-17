@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import { styles } from './styles'
 import { Body, Divider } from 'presentation/components'
 import { COLORS, Strings } from 'presentation/assets'
@@ -7,9 +8,13 @@ import { EvolutionProps } from './EvolutionProps'
 import { EvolutionRow } from './components'
 import { observer } from 'mobx-react'
 import { EvolutionViewModel } from './EvolutionViewModel'
+import { EvolutionNavigationProp } from './EvolutionNavigationProp'
+import { EvolutionRouter } from './EvolutionRouter'
 
 export const Evolution = observer(({ pokemon }: EvolutionProps) => {
-  const [viewModel] = useState(() => new EvolutionViewModel(pokemon.name))
+  const [viewModel] = useState(() => new EvolutionViewModel(pokemon))
+  const navigation = useNavigation<EvolutionNavigationProp>()
+  const [router] = useState(() => new EvolutionRouter(navigation))
 
   return (
     <View style={styles.container}>
@@ -17,8 +22,10 @@ export const Evolution = observer(({ pokemon }: EvolutionProps) => {
         {Strings.pokemonDetails.evolution.chain} #{viewModel.evolutionChainId}
       </Body>
       <EvolutionRow
-        fromIconUri={viewModel.pokemonFirstEvolutionImageUrl!}
-        toIconUri={viewModel.pokemonSecondEvolutionImageUrl!}
+        currentPokemon={pokemon}
+        evolveFromPokemon={viewModel.pokemonFirstEvolution!}
+        evolveToPokemon={viewModel.pokemonSecondEvolution!}
+        onPokemonImagePress={router.navigateToPokemonDetails}
         level={viewModel.firstEvolutionTriggeringLevel ?? Strings.pokemonDetails.evolution.unknownLevel}
       />
       <Divider
@@ -27,8 +34,10 @@ export const Evolution = observer(({ pokemon }: EvolutionProps) => {
         style={styles.divider}
       />
       <EvolutionRow
-        fromIconUri={viewModel.pokemonSecondEvolutionImageUrl!}
-        toIconUri={viewModel.pokemonThirdEvolutionImageUrl!}
+        currentPokemon={pokemon}
+        evolveFromPokemon={viewModel.pokemonSecondEvolution!}
+        evolveToPokemon={viewModel.pokemonThirdEvolution!}
+        onPokemonImagePress={router.navigateToPokemonDetails}
         level={viewModel.secondEvolutionTriggeringLevel ?? Strings.pokemonDetails.evolution.unknownLevel}
         style={styles.bottomEvolutionRow}
       />

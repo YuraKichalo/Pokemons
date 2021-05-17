@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, View } from 'react-native'
+import { Image, TouchableOpacity, View } from 'react-native'
 import { EvolutionRowProps } from './EvolutionRowProps'
 import { Body, Icon } from 'presentation/components'
 import { COLORS } from 'presentation/assets'
@@ -11,14 +11,19 @@ export const EvolutionRow = (props: EvolutionRowProps) => (
     {...props}
     style={[styles.container, props.style]}
   >
-    {!props.fromIconUri && (
+    {!props.evolveFromPokemon && (
       <ImagePlaceholder />
     )}
-    {props.fromIconUri && (
-      <Image
-        source={{ uri: props.fromIconUri }}
-        style={styles.pokemonImage}
-      />
+    {props.evolveFromPokemon && (
+      <TouchableOpacity
+        disabled={props.currentPokemon.id === props.evolveFromPokemon.id}
+        onPress={() => props.onPokemonImagePress(props.evolveFromPokemon)}
+      >
+        <Image
+          source={{ uri: props.evolveFromPokemon.sprite }}
+          style={styles.pokemonImage}
+        />
+      </TouchableOpacity>
     )}
     <View style={styles.levelContainer}>
       <Icon
@@ -30,14 +35,19 @@ export const EvolutionRow = (props: EvolutionRowProps) => (
         Lvl {props.level}
       </Body>
     </View>
-    {!props.toIconUri && (
+    {!props.evolveToPokemon && (
       <ImagePlaceholder />
     )}
-    {props.toIconUri && (
-      <Image
-        source={{ uri: props.toIconUri }}
-        style={styles.pokemonImage}
-      />
+    {props.evolveToPokemon && (
+      <TouchableOpacity
+        disabled={props.currentPokemon.id === props.evolveToPokemon.id}
+        onPress={() => props.onPokemonImagePress(props.evolveToPokemon)}
+      >
+        <Image
+          source={{ uri: props.evolveToPokemon.sprite }}
+          style={styles.pokemonImage}
+        />
+      </TouchableOpacity>
     )}
   </View>
 )

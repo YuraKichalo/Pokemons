@@ -1,6 +1,6 @@
-import { COLORS, ThemeColors } from 'presentation/assets'
+import { COLORS } from 'presentation/assets'
 
-export const useThemeColor = (color: ThemeColors) => {
+export const useThemeColor = (color: string) => {
   switch (color) {
     case 'primary':
       return COLORS.primary
