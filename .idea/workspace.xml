@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="added ability navigate to specific pokemon from pokemon evolution chain">
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionNavigationProp.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionRouter.ts" afterDir="false" />
+    <list default="true" id="5d358436-7aeb-4adc-a54b-79b744a4963b" name="Default Changelist" comment="improved code base for FavouritePokemons navigation">
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemonsNavigationProp.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemonsRouter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/Evolution.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/Evolution.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/EvolutionViewModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRowProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/PokemonDetails/tabs/Evolution/components/EvolutionRow/EvolutionRowProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/utils/useThemeColor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/utils/useThemeColor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/FavouritePokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/states/FavouritePokemons/FavouritePokemons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/states/FavouritePokemons/FavouritePokemons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/states/FavouritePokemons/FavouritePokemonsProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/screens/FavouritePokemons/states/FavouritePokemons/FavouritePokemonsProps.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,14 +133,7 @@
       <workItem from="1617901787881" duration="5942000" />
       <workItem from="1620039350877" duration="19300000" />
       <workItem from="1620379120673" duration="7947000" />
-      <workItem from="1621066054269" duration="10195000" />
-    </task>
-    <task id="LOCAL-00006" summary="added categories">
-      <created>1609353661475</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1609353661475</updated>
+      <workItem from="1621066054269" duration="11157000" />
     </task>
     <task id="LOCAL-00007" summary="added ChildrenSpacing component &amp; make Home screen scrollable">
       <created>1609690886392</created>
@@ -481,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621224918342</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added ability navigate to specific pokemon from pokemon evolution chain">
+      <created>1621229914241</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1621229914241</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added content to PokemonDetails top container" />
     <MESSAGE value="added base swiper to PokemonDetails component" />
     <MESSAGE value="add TabsController component" />
     <MESSAGE value="added base component for each tab and start adding of mocked content to About.tsx tab" />
@@ -526,7 +522,8 @@
     <MESSAGE value="added navigation to FavouritePokemons" />
     <MESSAGE value="added ability to add/remove favourite Pokemon" />
     <MESSAGE value="added ability navigate to specific pokemon from pokemon evolution chain" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ability navigate to specific pokemon from pokemon evolution chain" />
+    <MESSAGE value="improved code base for FavouritePokemons navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved code base for FavouritePokemons navigation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="644" y="494" key="#ESLint" timestamp="1621229852918">
@@ -537,10 +534,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="193" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1621228991618" />
-    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1621229783220">
+    <state x="236" y="251" key="CommitChangelistDialog2" timestamp="1621231053249">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1621229783220" />
+    <state x="236" y="251" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1621231053249" />
     <state width="1434" height="930" key="GridCell.Tab.0.bottom" timestamp="1621229495711">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -561,10 +558,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="712" y="306" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1617904127878" />
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1621224921369">
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2" timestamp="1621229916094">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1621224921369" />
+    <state x="293" y="338" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1621229916094" />
     <state x="392" y="369" width="727" height="554" key="find.popup" timestamp="1620385551338">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
